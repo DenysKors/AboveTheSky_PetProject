@@ -11,7 +11,7 @@ export default {
       },
       colors: {},
       fontFamily: {
-        main: ["MadimiOne", "sans-serif"],
+        logo: ["MadimiOne", "sans-serif"],
       },
       fontSize: {
         base: "1rem",
