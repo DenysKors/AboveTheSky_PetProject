@@ -6,3 +6,8 @@
   font-family: "MadimiOne";
   src: url(./assets/fonts/MadimiOne-Regular.ttf);
 }
+
+@font-face {
+  font-family: "Oswald";
+  src: url(./assets/fonts/Oswald-Medium.ttf);
+}

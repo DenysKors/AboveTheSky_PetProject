@@ -3,24 +3,15 @@ import { Fragment, useState } from "react";
 import { Bars3Icon, ChevronDoubleDownIcon } from "@heroicons/react/24/outline";
 import { Popover, Transition } from "@headlessui/react";
 
-const solarPlanets = [
-  { name: "Sun", href: "#sun" },
-  { name: "Mercury", href: "#mercury" },
-  { name: "Venus", href: "#venus" },
-  { name: "Earth", href: "#earth" },
-  { name: "Mars", href: "#mars" },
-  { name: "Jupiter", href: "#jupiter" },
-  { name: "Saturn", href: "#saturn" },
-  { name: "Uranus", href: "#uranus" },
-  { name: "Neptune", href: "#neptune" },
-];
+import { solarPlanets } from "../data/solarPlanets";
 
 function Navigation() {
-  const [BurgerMenuOpen, setBurgerMenuOpen] = useState(false);
+  const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
+
   return (
     <nav className="mx-auto flex items-center justify-between p-6 lg:p-8">
       <div className="flex ">
-        <a href="#home" className="font-logo p-1.5 text-base lg:text-xl">
+        <a href="#home" className="font-logo p-1.5 text-xl">
           AboveTheSky
         </a>
       </div>
@@ -31,11 +22,11 @@ function Navigation() {
       >
         <Bars3Icon className="h-6 w-6" />
       </button>
-      <Popover.Group className="hidden lg:flex lg:gap-x-12">
+      <Popover.Group className="hidden md:flex md:gap-x-4 lg:gap-x-12 items-center">
         <Popover className="relative">
           {({ open }) => (
             <>
-              <Popover.Button className="p-1 flex items-center gap-x-1 text-sm font-semibold uppercase leading-6 text-gray-900 border-2 rounded-lg">
+              <Popover.Button className="p-1 flex items-center gap-x-1 text-base tracking-wide font-main uppercase text-gray-900 border-2 rounded-lg">
                 The Solar system
                 <ChevronDoubleDownIcon
                   className={`${open ? "rotate-180 transition" : ""}
@@ -57,11 +48,11 @@ function Navigation() {
                     {solarPlanets.map((planet) => (
                       <li
                         key={planet.name}
-                        className="group relative flex items-center gap-x-6 rounded-lg py-2 px-8 text-base leading-6 hover:bg-gray-50"
+                        className="group relative flex items-center gap-x-6 rounded-lg py-2 px-8 text-base tracking-wide hover:bg-gray-50"
                       >
                         <a
                           href={planet.href}
-                          className="block font-semibold text-gray-900"
+                          className="block font-main text-gray-900"
                         >
                           {planet.name}
                         </a>
@@ -74,6 +65,18 @@ function Navigation() {
             </>
           )}
         </Popover>
+        <a
+          href="#"
+          className="font-main text-base tracking-wide uppercase  text-gray-900"
+        >
+          Lorem ipsum
+        </a>
+        <a
+          href="#"
+          className="font-main text-base tracking-wide uppercase  text-gray-900"
+        >
+          Lorem ipsum
+        </a>
       </Popover.Group>
     </nav>
   );
