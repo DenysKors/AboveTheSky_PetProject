@@ -14,9 +14,9 @@ function Navigation() {
 
   return (
     <>
-      <nav className="mx-auto flex items-center justify-between p-6 lg:p-8">
+      <nav className="mx-auto w-screen flex items-center justify-between p-6 lg:p-8">
         <div className="flex ">
-          <a href="#home" className="font-logo p-1.5 text-lg">
+          <a href="#home" className="font-logo p-1.5 text-lg lg:text-xl">
             AboveTheSky
           </a>
         </div>
@@ -49,7 +49,7 @@ function Navigation() {
                   leaveTo="opacity-0 translate-y-1"
                 >
                   <Popover.Panel className="absolute -right-0 top-full z-10 mt-3  max-w-48 overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/5">
-                    <ul>
+                    <ul className="p-2">
                       {solarPlanets.map((planet) => (
                         <li
                           key={planet.name}
@@ -60,6 +60,7 @@ function Navigation() {
                             className="block font-main text-gray-900"
                           >
                             {planet.name}
+                            <span className="absolute inset-0" />
                           </a>
                         </li>
                       ))}
@@ -107,7 +108,7 @@ function Navigation() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-main uppercase leading-7 text-gray-900 hover:bg-gray-50">
                         The Solar system
                         <ChevronDoubleDownIcon
                           className={`${open ? "rotate-180 transition" : ""}
@@ -115,9 +116,33 @@ function Navigation() {
                       `}
                         />
                       </Disclosure.Button>
+                      <Disclosure.Panel className="mt-2 space-y-2">
+                        {solarPlanets.map((planet) => (
+                          <Disclosure.Button
+                            key={planet.name}
+                            as="a"
+                            href={planet.href}
+                            className="block rounded-lg py-2 pl-6 pr-3 font-main text-base text-gray-900 hover:bg-gray-50"
+                          >
+                            {planet.name}
+                          </Disclosure.Button>
+                        ))}
+                      </Disclosure.Panel>
                     </>
                   )}
                 </Disclosure>
+                <a
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-50"
+                >
+                  Lorem ipsum
+                </a>
+                <a
+                  href="#"
+                  className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-50"
+                >
+                  Lorem ipsum
+                </a>
               </div>
             </div>
           </div>
