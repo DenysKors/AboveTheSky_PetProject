@@ -16,13 +16,16 @@ function Navigation() {
     <>
       <nav className="mx-auto w-screen flex items-center justify-between p-6 lg:p-8">
         <div className="flex ">
-          <a href="#home" className="font-logo p-1.5 text-lg lg:text-xl">
+          <a
+            href="#home"
+            className="font-logo p-1.5 text-lg text-white md:text-xl lg:text-xxl "
+          >
             AboveTheSky
           </a>
         </div>
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 md:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-300 md:hidden"
           onClick={() => setIsBurgerMenuOpen(true)}
         >
           <Bars3Icon className="h-6 w-6" />
@@ -31,11 +34,11 @@ function Navigation() {
           <Popover className="relative">
             {({ open }) => (
               <>
-                <Popover.Button className="p-1 flex items-center gap-x-1 text-base tracking-wide font-main uppercase text-gray-900 border-2 rounded-lg">
+                <Popover.Button className="p-1 flex items-center gap-x-1 text-base tracking-wide font-main uppercase text-gray-300 border-gray-300 border-2 rounded-lg">
                   The Solar system
                   <ChevronDoubleDownIcon
                     className={`${open ? "rotate-180 transition" : ""}
-                      h-5 w-5 flex-none text-gray-400
+                      h-5 w-5 flex-none text-gray-300
                       `}
                   />
                 </Popover.Button>
@@ -53,7 +56,7 @@ function Navigation() {
                       {solarPlanets.map((planet) => (
                         <li
                           key={planet.name}
-                          className="group relative flex items-center gap-x-6 rounded-lg py-2 px-8 text-base tracking-wide hover:bg-gray-50"
+                          className="group relative flex items-center gap-x-6 rounded-lg py-2 px-8 text-base tracking-wide hover:bg-gray-200"
                         >
                           <a
                             href={planet.href}
@@ -73,13 +76,13 @@ function Navigation() {
           </Popover>
           <a
             href="#"
-            className="font-main text-base tracking-wide uppercase  text-gray-900"
+            className="p-1 font-main text-base tracking-wide uppercase border-2 rounded-lg  text-gray-300 border-gray-300"
           >
             Lorem ipsum
           </a>
           <a
             href="#"
-            className="font-main text-base tracking-wide uppercase  text-gray-900"
+            className="p-1 font-main text-base tracking-wide uppercase border-2 rounded-lg  text-gray-300 border-gray-300"
           >
             Lorem ipsum
           </a>
@@ -108,11 +111,11 @@ function Navigation() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-main uppercase leading-7 text-gray-900 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-main uppercase leading-7 text-gray-900 hover:bg-gray-200">
                         The Solar system
                         <ChevronDoubleDownIcon
                           className={`${open ? "rotate-180 transition" : ""}
-                    h-5 w-5 flex-none text-gray-400
+                    h-5 w-5 flex-none text-gray-100
                       `}
                         />
                       </Disclosure.Button>
@@ -122,7 +125,7 @@ function Navigation() {
                             key={planet.name}
                             as="a"
                             href={planet.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 font-main text-base text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 font-main text-base text-gray-900 hover:bg-gray-200"
                           >
                             {planet.name}
                           </Disclosure.Button>
@@ -133,13 +136,13 @@ function Navigation() {
                 </Disclosure>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-200"
                 >
                   Lorem ipsum
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-200"
                 >
                   Lorem ipsum
                 </a>
