@@ -31,6 +31,9 @@ export default {
       backgroundImage: {
         hero: "url('./assets/images/hero.jpg')",
       },
+      boxShadow: {
+        nav: "rgba(256, 256, 256, 0.56) 0px -10px 30px 4px;",
+      },
     },
   },
   plugins: [],

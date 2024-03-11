@@ -18,7 +18,7 @@ function Navigation() {
         <div className="flex ">
           <a
             href="#home"
-            className="font-logo p-1.5 text-lg text-logo md:text-xl lg:text-xxl "
+            className="font-logo p-1.5 text-lg text-logo md:text-xl lg:text-xxl"
           >
             AboveTheSky
           </a>
@@ -75,7 +75,7 @@ function Navigation() {
             )}
           </Popover>
           <a href="#" className="btn-nav">
-            Lorem ipsum
+            Get picture
           </a>
           <a href="#" className="btn-nav">
             Lorem ipsum
