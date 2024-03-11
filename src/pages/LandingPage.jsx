@@ -1,11 +1,13 @@
+import Wrapper from "../components/Wrapper";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 
 function LandingPage() {
   return (
     <>
-      <Header />
-      <HeroSection />
+      <Wrapper />
+      {/* <Header />
+        <HeroSection /> */}
     </>
   );
 }

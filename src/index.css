@@ -11,3 +11,9 @@
   font-family: "Oswald";
   src: url(./assets/fonts/Oswald-Medium.ttf);
 }
+
+@layer components {
+  .btn-nav {
+    @apply p-1 text-base tracking-wide font-main uppercase text-gray-300 border-gray-300 border-2 rounded-lg;
+  }
+}

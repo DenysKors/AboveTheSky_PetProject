@@ -11,6 +11,7 @@ export default {
       },
       colors: {
         herobg: "rgb(6,6,6)",
+        logo: "rgb(255 255 255)",
       },
       fontFamily: {
         logo: ["MadimiOne", "sans-serif"],
@@ -24,8 +25,8 @@ export default {
       },
       height: {
         390: "390px",
-        460: "460px",
-        520: "520px",
+        620: "620px",
+        720: "720px",
       },
       backgroundImage: {
         hero: "url('./assets/images/hero.jpg')",

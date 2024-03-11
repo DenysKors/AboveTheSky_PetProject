@@ -14,11 +14,11 @@ function Navigation() {
 
   return (
     <>
-      <nav className="mx-auto w-screen flex items-center justify-between p-6 lg:p-8">
+      <nav className="mx-auto w-screen flex items-center justify-between p-4 lg:p-6">
         <div className="flex ">
           <a
             href="#home"
-            className="font-logo p-1.5 text-lg text-white md:text-xl lg:text-xxl "
+            className="font-logo p-1.5 text-lg text-logo md:text-xl lg:text-xxl "
           >
             AboveTheSky
           </a>
@@ -28,13 +28,13 @@ function Navigation() {
           className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-300 md:hidden"
           onClick={() => setIsBurgerMenuOpen(true)}
         >
-          <Bars3Icon className="h-6 w-6" />
+          <Bars3Icon className="h-6 w-6 text-logo" />
         </button>
         <Popover.Group className="hidden md:flex md:gap-x-4 lg:gap-x-12 items-center">
           <Popover className="relative">
             {({ open }) => (
               <>
-                <Popover.Button className="p-1 flex items-center gap-x-1 text-base tracking-wide font-main uppercase text-gray-300 border-gray-300 border-2 rounded-lg">
+                <Popover.Button className="btn-nav flex items-center gap-x-1">
                   The Solar system
                   <ChevronDoubleDownIcon
                     className={`${open ? "rotate-180 transition" : ""}
@@ -74,16 +74,10 @@ function Navigation() {
               </>
             )}
           </Popover>
-          <a
-            href="#"
-            className="p-1 font-main text-base tracking-wide uppercase border-2 rounded-lg  text-gray-300 border-gray-300"
-          >
+          <a href="#" className="btn-nav">
             Lorem ipsum
           </a>
-          <a
-            href="#"
-            className="p-1 font-main text-base tracking-wide uppercase border-2 rounded-lg  text-gray-300 border-gray-300"
-          >
+          <a href="#" className="btn-nav">
             Lorem ipsum
           </a>
         </Popover.Group>
@@ -115,7 +109,7 @@ function Navigation() {
                         The Solar system
                         <ChevronDoubleDownIcon
                           className={`${open ? "rotate-180 transition" : ""}
-                    h-5 w-5 flex-none text-gray-100
+                    h-5 w-5 flex-none text-gray-900
                       `}
                         />
                       </Disclosure.Button>
