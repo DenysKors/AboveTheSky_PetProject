@@ -12,8 +12,13 @@
   src: url(./assets/fonts/Oswald-Medium.ttf);
 }
 
+@font-face {
+  font-family: "Ubuntu";
+  src: url(./assets/fonts/Ubuntu-Regular.ttf);
+}
+
 @layer components {
   .btn-nav {
-    @apply p-1 text-base tracking-wide font-main uppercase text-gray-300 border-gray-300 border-2 rounded-lg hover:shadow-nav;
+    @apply p-1 text-base tracking-wide font-main uppercase text-gray-300 border-gray-300 border-2 rounded-lg transition duration-300 hover:shadow-nav;
   }
 }

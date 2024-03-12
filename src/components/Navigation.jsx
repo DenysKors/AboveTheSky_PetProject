@@ -132,7 +132,7 @@ function Navigation() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-200"
                 >
-                  Lorem ipsum
+                  Get picture
                 </a>
                 <a
                   href="#"

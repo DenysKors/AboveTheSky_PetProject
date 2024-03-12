@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         logo: ["MadimiOne", "sans-serif"],
         main: ["Oswald", "sans-serif"],
+        text: ["Ubuntu", "sans-serif"],
       },
       fontSize: {
         base: "1rem",
@@ -32,7 +33,7 @@ export default {
         hero: "url('./assets/images/hero.jpg')",
       },
       boxShadow: {
-        nav: "rgba(256, 256, 256, 0.56) 0px -10px 30px 4px;",
+        nav: "rgba(256, 256, 256, 0.8) 0px -10px 30px 4px;",
       },
     },
   },
