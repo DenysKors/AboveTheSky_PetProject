@@ -10,10 +10,10 @@ function HeroSection() {
         <span className="italic text-white"> - Galileo Galilei</span>
       </div>
       <div className="absolute bottom-[10px] right-[210px] w-[100px] md:bottom-[20px] md:right-[480px] md:w-[220px] lg:bottom-[30px] lg:right-[560px] lg:w-[340px]">
-        <img src="/images/spaceship.png" alt="spaceship" />
+        <img src="../images/spaceship.png" alt="spaceship" />
       </div>
       <div className="absolute bottom-[100px] left-0 w-[130px] md:bottom-[200px] md:w-[260px] lg:bottom-[240px] lg:w-[380px]">
-        <img src="/images/astronaut.png" alt="astronaut" />
+        <img src="./images/astronaut.png" alt="astronaut" />
       </div>
     </section>
   );
