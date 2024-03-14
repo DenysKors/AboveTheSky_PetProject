@@ -35,6 +35,22 @@ export default {
       boxShadow: {
         nav: "rgba(256, 256, 256, 0.8) 0px -10px 30px 4px;",
       },
+      keyframes: {
+        flyMobile: {
+          "0%": { transform: "translatey(0)" },
+          "50%": { transform: "translatey(-10px)" },
+          "100%": { transform: "translatey(0)" },
+        },
+        flyTablet: {
+          "0%": { transform: "translatey(0)" },
+          "50%": { transform: "translatey(-20px)" },
+          "100%": { transform: "translatey(0)" },
+        },
+      },
+      animation: {
+        flyMobile: "flyMobile 3s ease-in-out 8",
+        flyTablet: "flyTablet 3s ease-in-out 8",
+      },
     },
   },
   plugins: [],

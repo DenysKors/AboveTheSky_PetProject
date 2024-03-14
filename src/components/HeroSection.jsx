@@ -15,7 +15,7 @@ function HeroSection() {
       <div className="absolute bottom-[10px] right-[210px] w-[100px] md:bottom-[20px] md:right-[480px] md:w-[220px] lg:bottom-[30px] lg:right-[560px] lg:w-[340px]">
         <img src={Spaceship} alt="spaceship" />
       </div>
-      <div className="absolute bottom-[100px] left-0 w-[130px] md:bottom-[200px] md:w-[260px] lg:bottom-[240px] lg:w-[380px]">
+      <div className="absolute bottom-[100px] left-0 w-[130px] md:bottom-[200px] md:w-[260px] lg:bottom-[240px] lg:w-[380px] animate-flyMobile md:animate-flyTablet">
         <img src={Astronaut} alt="astronaut" />
       </div>
     </section>

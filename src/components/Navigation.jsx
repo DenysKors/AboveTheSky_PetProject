@@ -18,7 +18,7 @@ function Navigation() {
         <div className="flex ">
           <a
             href="#home"
-            className="font-logo p-1.5 text-lg text-logo md:text-xl lg:text-xxl"
+            className="font-logo p-1.5 text-lg text-logo md:text-xl lg:text-xxl transition duration-1000 hover:text-yellow-500 focus:text-yellow-500"
           >
             AboveTheSky
           </a>
