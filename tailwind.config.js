@@ -24,11 +24,6 @@ export default {
         xl: "1.5rem",
         xxl: "2.25rem",
       },
-      height: {
-        390: "390px",
-        620: "620px",
-        720: "720px",
-      },
       backgroundImage: {
         hero: "url('./assets/images/hero.jpg')",
         "radial-gradient":
