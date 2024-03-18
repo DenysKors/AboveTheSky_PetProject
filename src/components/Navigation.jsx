@@ -14,7 +14,7 @@ function Navigation() {
 
   return (
     <>
-      <nav className="mx-auto w-screen flex items-center justify-between p-4 lg:p-6">
+      <nav className="mx-auto w-screen flex items-center justify-between py-4 px-6 lg:px-8">
         <div className="flex ">
           <a
             href="#home"
@@ -35,7 +35,7 @@ function Navigation() {
             {({ open }) => (
               <>
                 <Popover.Button className="btn-nav flex items-center gap-x-1">
-                  The Solar system
+                  Solar system
                   <ChevronDoubleDownIcon
                     className={`${open ? "rotate-180 transition" : ""}
                       h-5 w-5 flex-none text-gray-300
@@ -78,7 +78,7 @@ function Navigation() {
             Get picture
           </a>
           <a href="#" className="btn-nav">
-            Lorem ipsum
+            Feedback
           </a>
         </Popover.Group>
       </nav>
@@ -106,7 +106,7 @@ function Navigation() {
                   {({ open }) => (
                     <>
                       <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-main uppercase leading-7 text-gray-900 hover:bg-gray-200">
-                        The Solar system
+                        Solar system
                         <ChevronDoubleDownIcon
                           className={`${open ? "rotate-180 transition" : ""}
                     h-5 w-5 flex-none text-gray-900
@@ -138,7 +138,7 @@ function Navigation() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-200"
                 >
-                  Lorem ipsum
+                  Feedback
                 </a>
               </div>
             </div>
