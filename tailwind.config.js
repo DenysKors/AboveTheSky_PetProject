@@ -34,6 +34,11 @@ export default {
       },
 
       keyframes: {
+        pulse: {
+          "0%": { opacity: "1" },
+          "50%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
         flyMobile: {
           "0%": { transform: "translatey(0)" },
           "50%": { transform: "translatey(-10px)" },
@@ -46,6 +51,7 @@ export default {
         },
       },
       animation: {
+        pulse: "pulse 3s linear infinite",
         flyMobile: "flyMobile 3s ease-in-out 8",
         flyTablet: "flyTablet 3s ease-in-out 8",
       },
