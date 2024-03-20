@@ -15,7 +15,7 @@ function SunSection() {
       </div>
       <div className="absolute z-10 right-[10%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
         <h2 className="section-title">The Sun</h2>
-        <ArrowLeftIcon className="text-white hidden md:block md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulse" />
+        <ArrowLeftIcon className="text-yellow-500 hidden md:block md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulse" />
         <p className="section-text">
           Our Sun is a 4.5 billion-year-old yellow dwarf star made of super-hot,
           electrically charged gas called plasma, at the center of our solar
