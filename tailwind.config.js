@@ -49,9 +49,14 @@ export default {
           "50%": { transform: "translatey(-20px)" },
           "100%": { transform: "translatey(0)" },
         },
+        rotate: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         pulse: "pulse 3s linear infinite",
+        rotate: "rotate 240s linear infinite",
         flyMobile: "flyMobile 3s ease-in-out 8",
         flyTablet: "flyTablet 3s ease-in-out 8",
       },

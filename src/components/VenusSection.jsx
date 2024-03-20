@@ -9,7 +9,7 @@ function VenusSection() {
       className="relative w-full h-[380px] md:h-[620px] lg:h-[840px] bg-herobg"
     >
       <div className="absolute z-0 top-[50%] left-[5%] translate-y-[-50%] w-[calc(100vw-50%)]">
-        <img src={Venus} alt="venus" />
+        <img className="animate-rotate" src={Venus} alt="venus" />
       </div>
       <div className="absolute z-10 right-[10%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
         <h2 className="section-title">Venus</h2>
