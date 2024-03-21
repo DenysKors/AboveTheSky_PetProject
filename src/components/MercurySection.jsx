@@ -14,7 +14,7 @@ function MercurySection() {
       <div className="absolute z-10 left-[10%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
         <h2 className="section-title">Mercury</h2>
         <ArrowRightIcon className="text-yellow-500 hidden md:block md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulse" />
-        <p className="section-text">
+        <p className="section-text text-fadeIn">
           The closest planet to the Sun and the smallest planet in the Solar
           System. It is barely bigger than our Moon. Mercury's sun-facing side
           is scorched by temperatures of around 430&#8451;.
