@@ -58,13 +58,14 @@ function Navigation() {
                           key={planet.name}
                           className="group relative flex items-center gap-x-6 rounded-lg py-2 px-8 text-base tracking-wide hover:bg-gray-200"
                         >
-                          <a
+                          <Popover.Button
+                            as="a"
                             href={planet.href}
                             className="block font-main text-gray-900"
                           >
                             {planet.name}
                             <span className="absolute inset-0" />
-                          </a>
+                          </Popover.Button>
                         </li>
                       ))}
                     </ul>
@@ -120,6 +121,7 @@ function Navigation() {
                             as="a"
                             href={planet.href}
                             className="block rounded-lg py-2 pl-6 pr-3 font-main text-base text-gray-900 hover:bg-gray-200"
+                            onClick={() => setIsBurgerMenuOpen(false)}
                           >
                             {planet.name}
                           </Disclosure.Button>
