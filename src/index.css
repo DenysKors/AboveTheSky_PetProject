@@ -35,6 +35,7 @@
   }
 }
 
+/* This css property is experimental, so I am going to use observer to be 100% sure it works.
 @layer base {
   @media (prefers-reduced-motion: no-preference) {
     .text-fadeIn {
@@ -52,4 +53,4 @@
     scale: 1;
     opacity: 1;
   }
-}
+} */
