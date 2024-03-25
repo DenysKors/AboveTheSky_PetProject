@@ -31,12 +31,16 @@
 
 @layer components {
   .section-text {
-    @apply text-text font-text md:text-base lg:text-lg select-none opacity-0;
+    @apply text-text font-text md:text-base lg:text-lg select-none;
   }
 }
 
 .text-fadeIn {
   animation: fadeIn 1s linear forwards;
+}
+
+.text-fadeOut {
+  animation: fadeOut 1s linear forwards;
 }
 
 @keyframes fadeIn {
@@ -49,7 +53,14 @@
   }
 }
 
-/* This css property is experimental, so I am going to use observer to be 100% sure it works.
+@keyframes fadeOut {
+  100% {
+    scale: 0.8;
+    opacity: 0;
+  }
+}
+
+/* Some of these css propertys is experimental, so I am going to use observer to be 100% sure it works.
 @layer base {
   @media (prefers-reduced-motion: no-preference) {
     .text-fadeIn {

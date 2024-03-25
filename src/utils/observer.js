@@ -8,8 +8,10 @@ const onEntry = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("text-fadeIn");
+      entry.target.classList.remove("text-fadeOut");
     } else {
       entry.target.classList.remove("text-fadeIn");
+      entry.target.classList.add("text-fadeOut");
     }
   });
 };
