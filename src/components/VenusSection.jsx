@@ -14,7 +14,7 @@ function VenusSection() {
       <div className="absolute z-10 right-[10%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
         <h2 className="section-title">Venus</h2>
         <ArrowLeftIcon className="text-yellow-500 hidden md:block md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulse" />
-        <p className="section-text text-fadeIn">
+        <p className="section-text">
           The hottest and brightest planet in the solar system. Similar in
           structure and size to Earth, Venus spins slowly in the opposite
           direction from most planets. One Venusian day takes 243 Earth days.

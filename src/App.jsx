@@ -1,14 +1,11 @@
-import { useEffect } from "react";
 import { observer } from "./utils/observer";
 
 import LandingPage from "./pages/LandingPage";
 
-window.onload = () => {
-  const sectionText = document
+window.onload = () =>
+  document
     .querySelectorAll(".section-text")
-    .forEach((text) => observer.observe(text));
-  console.log(sectionText);
-};
+    .forEach((el) => observer.observe(el));
 
 function App() {
   return (

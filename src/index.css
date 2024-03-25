@@ -31,7 +31,21 @@
 
 @layer components {
   .section-text {
-    @apply text-text font-text md:text-base lg:text-lg select-none;
+    @apply text-text font-text md:text-base lg:text-lg select-none opacity-0;
+  }
+}
+
+.text-fadeIn {
+  animation: fadeIn 1s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+    opacity: 1;
   }
 }
 

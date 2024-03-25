@@ -1,14 +1,16 @@
 const options = {
   root: null,
   rootMargin: "0px",
-  threshold: 0.5,
+  threshold: 0.75,
 };
 
 const onEntry = (entries, observer) => {
   entries.forEach((entry) => {
-    entry.isIntersecting
-      ? console.log("text in view")
-      : console.log("not in view");
+    if (entry.isIntersecting) {
+      entry.target.classList.add("text-fadeIn");
+    } else {
+      entry.target.classList.remove("text-fadeIn");
+    }
   });
 };
 
