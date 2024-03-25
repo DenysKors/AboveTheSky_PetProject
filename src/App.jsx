@@ -1,10 +1,13 @@
 import { useEffect } from "react";
+import { observer } from "./utils/observer";
 
 import LandingPage from "./pages/LandingPage";
 
 window.onload = () => {
-  const element = document.getElementById("venus");
-  console.log(element);
+  const sectionText = document
+    .querySelectorAll(".section-text")
+    .forEach((text) => observer.observe(text));
+  console.log(sectionText);
 };
 
 function App() {
