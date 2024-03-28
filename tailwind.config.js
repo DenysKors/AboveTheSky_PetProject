@@ -55,7 +55,9 @@ export default {
         },
       },
       animation: {
-        pulse: "pulse 3s linear infinite",
+        pulse: "pulse 2000ms linear infinite",
+        pulseDel4: "pulse 2000ms linear 400ms infinite",
+        pulseDel7: "pulse 2000ms linear 700ms infinite",
         rotate: "rotate 240s linear infinite",
         flyMobile: "flyMobile 3s ease-in-out 8",
         flyTablet: "flyTablet 3s ease-in-out 8",

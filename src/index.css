@@ -36,16 +36,16 @@
 }
 
 .text-fadeIn {
-  animation: fadeIn 1s linear forwards;
+  animation: fadeIn 500ms linear forwards;
 }
 
 .text-fadeOut {
-  animation: fadeOut 1s linear forwards;
+  animation: fadeOut 500ms linear forwards;
 }
 
 @keyframes fadeIn {
   0% {
-    scale: 0.8;
+    scale: 0.6;
   }
   100% {
     scale: 1;
@@ -55,7 +55,7 @@
 
 @keyframes fadeOut {
   100% {
-    scale: 0.8;
+    scale: 0.6;
     opacity: 0;
   }
 }

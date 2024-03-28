@@ -1,15 +1,21 @@
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
+
+import Earth from "../assets/images/earth.png";
 
 function VenusSection() {
   return (
     <section id="earth" className="bg-herobg">
       <div className="relative w-full h-[380px] md:h-[620px] lg:h-[840px]">
-        {/* <div className="absolute z-0 top-[50%] left-[5%] translate-y-[-50%] w-[calc(100vw-50%)]">
-        <img className="animate-rotate" src={Venus} alt="venus" />
-      </div> */}
+        <div className="absolute z-0 top-[50%] right-[5%] translate-y-[-50%] w-[calc(100vw-48%)] flex justify-end">
+          <img src={Earth} alt="earth" />
+        </div>
         <div className="absolute z-10 left-[10%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
           <h2 className="section-title">Earth</h2>
-          <ArrowRightIcon className="text-yellow-500 hidden md:block md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulse" />
+          <div className="hidden md:flex">
+            <ChevronDoubleRightIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulse" />
+            <ChevronDoubleRightIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulseDel4" />
+            <ChevronDoubleRightIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulseDel7" />
+          </div>
           <p className="section-text">
             Earth has a moon and an atmosphere that consists of 78% nitrogen,
             21% oxygen, and 1% other gases. It's the only place we know of
