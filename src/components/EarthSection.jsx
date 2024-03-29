@@ -6,7 +6,7 @@ function VenusSection() {
   return (
     <section id="earth" className="bg-herobg">
       <div className="relative w-full h-[380px] md:h-[620px] lg:h-[840px]">
-        <div className="absolute z-0 top-[50%] right-[5%] translate-y-[-50%] w-[calc(100vw-48%)] flex justify-end">
+        <div className="absolute z-0 top-[50%] right-[5%] translate-y-[-50%] w-[calc(100vw-50%)] flex justify-end">
           <img src={Earth} alt="earth" />
         </div>
         <div className="absolute z-10 left-[10%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
@@ -24,8 +24,8 @@ function VenusSection() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-3 md:gap-4 md:flex-row justify-center items-center">
-        <div className="relative pt-[55%] w-[calc(100vw-10%)] md:w-[calc(100vw-54%)]">
+      <div className="flex flex-col gap-3 md:gap-4 xl:gap-8 md:flex-row justify-center items-center">
+        <div className="relative pt-[55%] w-[calc(100vw-10%)] md:w-[calc(100vw-54%)] xl:w-[calc(100vw-65%)] md:pt-[35%] xl:pt-[30%]">
           <iframe
             src="https://player.vimeo.com/video/927491728?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             frameBorder="0"
@@ -40,7 +40,7 @@ function VenusSection() {
             title="Earth dark side"
           ></iframe>
         </div>
-        <div className="relative pt-[55%] w-[calc(100vw-10%)] md:w-[calc(100vw-54%)]">
+        <div className="relative pt-[55%] w-[calc(100vw-10%)] md:w-[calc(100vw-54%)] xl:w-[calc(100vw-65%)] md:pt-[35%] xl:pt-[30%]">
           <iframe
             src="https://player.vimeo.com/video/927511584?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             frameBorder="0"

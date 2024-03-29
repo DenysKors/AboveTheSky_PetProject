@@ -3,15 +3,19 @@ import SunSection from "../components/SunSection";
 import MercurySection from "../components/MercurySection";
 import VenusSection from "../components/VenusSection";
 import EarthSection from "../components/EarthSection";
+import MarsSection from "../components/MarsSection";
 
 function LandingPage() {
   return (
     <>
       <Wrapper />
-      <SunSection />
-      <MercurySection />
-      <VenusSection />
-      <EarthSection />
+      <main>
+        <SunSection />
+        <MercurySection />
+        <VenusSection />
+        <EarthSection />
+        <MarsSection />
+      </main>
     </>
   );
 }
