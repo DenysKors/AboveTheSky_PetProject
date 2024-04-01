@@ -25,6 +25,15 @@ function MarsSection() {
           large amount of a iron oxide.
         </p>
       </div>
+      <div>
+        <h3>Mars robots missions</h3>
+        <ul>
+          <li>img</li>
+          <li>img</li>
+          <li>img</li>
+          <li>img</li>
+        </ul>
+      </div>
     </section>
   );
 }
