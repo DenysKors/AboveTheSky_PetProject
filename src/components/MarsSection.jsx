@@ -1,6 +1,12 @@
 import { ChevronDoubleLeftIcon } from "@heroicons/react/24/outline";
 
 import Mars from "../assets/images/mars.png";
+import Marsmission_1 from "../assets/images/marsmission_1.png";
+import Marsmission_2 from "../assets/images/marsmission_2.png";
+import Marsmission_3 from "../assets/images/marsmission_3.png";
+import Marsmission_4 from "../assets/images/marsmission_4.png";
+import Marsmission_5 from "../assets/images/marsmission_5.png";
+import Marsmission_6 from "../assets/images/marsmission_6.png";
 
 function MarsSection() {
   return (
@@ -24,15 +30,37 @@ function MarsSection() {
           </p>
         </div>
       </div>
-      <div>
+      <div className="lg:pt-24">
         <h3 className="text-text font-text md:text-base lg:text-lg select-none text-center tracking-wider uppercase">
           Mars robots missions
         </h3>
-        <ul>
-          <li>img</li>
-          <li>img</li>
-          <li>img</li>
-          <li>img</li>
+        <ul className="max-w-[1440px] max-h-[1180px] grid grid-cols-3 gap-1 md:gap-2 lg:gap-3">
+          <li className="">
+            <img
+              className="w-full h-full"
+              src={Marsmission_1}
+              alt="marsmission"
+            />
+          </li>
+          <li className="">
+            <img src={Marsmission_2} alt="marsmission" />
+          </li>
+          <li className="">
+            <img src={Marsmission_3} alt="marsmission" />
+          </li>
+          <li className="">
+            <img src={Marsmission_4} alt="marsmission" />
+          </li>
+          <li className="col-span-2">
+            <img
+              className="w-full h-full"
+              src={Marsmission_5}
+              alt="marsmission"
+            />
+          </li>
+          <li className="col-span-3">
+            <img src={Marsmission_6} alt="marsmission" />
+          </li>
         </ul>
       </div>
     </section>
