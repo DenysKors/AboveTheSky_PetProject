@@ -9,7 +9,7 @@ function LandingPage() {
   return (
     <>
       <Wrapper />
-      <main>
+      <main className="m-auto px-3 md:px-8 lg:px-16 max-w-[1920px] bg-herobg">
         <SunSection />
         <MercurySection />
         <VenusSection />

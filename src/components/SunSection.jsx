@@ -8,12 +8,12 @@ function SunSection() {
       id="sun"
       className="relative w-full h-[420px] md:h-[680px] lg:h-[840px] bg-herobg"
     >
-      <div className="relative h-full max-w-[1335px] bg-[radial-gradient(circle_at_30.5%_50%,rgba(210,37,0,1.0)_0%,rgba(210,37,0,1.0)_30%,rgb(6,6,6)_38%)]">
-        <div className="absolute z-0 top-[50%] left-[5%] translate-y-[-50%] w-[calc(100vw-50%)]">
+      <div className="relative h-full max-w-[1300px] bg-[radial-gradient(circle_at_40.5%_50%,rgba(210,37,0,1.0)_0%,rgba(210,37,0,1.0)_35%,rgb(6,6,6)_44%)]">
+        <div className="absolute z-0 top-[50%] left-[13%] translate-y-[-50%] w-[calc(100vw-56%)]">
           <img src={Sun} alt="sun" />
         </div>
       </div>
-      <div className="absolute z-10 right-[10%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
+      <div className="absolute z-10 right-0 md:right-[5%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
         <h2 className="section-title">The Sun</h2>
         <div className="hidden md:flex">
           <ChevronDoubleLeftIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulseDel7" />

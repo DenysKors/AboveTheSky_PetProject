@@ -6,12 +6,12 @@ function VenusSection() {
   return (
     <section
       id="venus"
-      className="relative w-full h-[380px] md:h-[620px] lg:h-[840px] bg-herobg"
+      className="relative w-full h-[380px] md:h-[620px] lg:h-[840px] flex items-center"
     >
-      <div className="absolute z-0 top-[50%] left-[5%] translate-y-[-50%] w-[calc(100vw-50%)]">
+      <div className="w-[calc(100vw-50%)]">
         <img className="animate-rotate" src={Venus} alt="venus" />
       </div>
-      <div className="absolute z-10 right-[10%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
+      <div className="absolute z-10 right-0 md:right-[5%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
         <h2 className="section-title">Venus</h2>
         <div className="hidden md:flex">
           <ChevronDoubleLeftIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulseDel7" />

@@ -2,14 +2,14 @@ import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
 
 import Earth from "../assets/images/earth.png";
 
-function VenusSection() {
+function EarthSection() {
   return (
-    <section id="earth" className="bg-herobg">
-      <div className="relative w-full h-[380px] md:h-[620px] lg:h-[840px]">
-        <div className="absolute z-0 top-[50%] right-[5%] translate-y-[-50%] w-[calc(100vw-50%)] flex justify-end">
+    <section id="earth">
+      <div className="relative w-full h-[380px] md:h-[620px] lg:h-[840px] flex items-center justify-end">
+        <div className="w-[calc(100vw-50%)] ">
           <img src={Earth} alt="earth" />
         </div>
-        <div className="absolute z-10 left-[10%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
+        <div className="absolute z-10 left-0 md:left-[5%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
           <h2 className="section-title">Earth</h2>
           <div className="hidden md:flex">
             <ChevronDoubleRightIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulse" />
@@ -18,7 +18,7 @@ function VenusSection() {
           </div>
           <p className="section-text">
             Earth has a moon and an atmosphere that consists of 78% nitrogen,
-            21% oxygen, and 1% other gases. It's the only place we know of
+            21% oxygen, and 1% other gases. Its the only place we know of
             inhabited by living things. Beautiful nature and the perfect place
             for life.
           </p>
@@ -60,4 +60,4 @@ function VenusSection() {
   );
 }
 
-export default VenusSection;
+export default EarthSection;
