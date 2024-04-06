@@ -23,10 +23,10 @@ function MarsSection() {
             <ChevronDoubleLeftIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulse" />
           </div>
           <p className="section-text">
-            Its the only planet inhabited entirely by robots and home to the
-            highest mountain in our solar system &ndash; Olympus Mons. Mars is
-            also known as the &lsquo;Red Planet&rsquo;, this colour comes from
-            the large amount of a iron oxide.
+            The only planet inhabited entirely by robots and home to the highest
+            mountain in our solar system &ndash; Olympus Mons. Mars is also
+            known as the &lsquo;Red Planet&rsquo;, this colour comes from the
+            large amount of a iron oxide.
           </p>
         </div>
       </div>
