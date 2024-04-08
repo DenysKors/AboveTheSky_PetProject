@@ -30,11 +30,11 @@ function MarsSection() {
           </p>
         </div>
       </div>
-      <div className="lg:pt-24">
-        <h3 className="text-text font-text text-sm md:text-base lg:text-lg select-none text-center tracking-wider uppercase shadow-2xl">
+      <div className="lg:pt-24  text-center ">
+        <h3 className="inline-block text-text font-text text-sm md:text-base lg:text-lg select-none tracking-wider uppercase border-b-yellow-500 border-b-2 back">
           Mars robots missions
         </h3>
-        <ul className="m-auto pt-2 lg:pt-6 md:pt-4 max-w-[1440px] max-h-[1180px] grid grid-cols-3 gap-1 md:gap-2 lg:gap-3">
+        <ul className="m-auto pt-2 lg:pt-6 md:pt-4 max-w-[1440px]  grid grid-cols-3 gap-1 md:gap-2 lg:gap-3">
           <li className="rounded-md overflow-hidden lg:rounded-lg">
             <img
               className="w-full h-full"

@@ -4,6 +4,7 @@ import MercurySection from "../components/MercurySection";
 import VenusSection from "../components/VenusSection";
 import EarthSection from "../components/EarthSection";
 import MarsSection from "../components/MarsSection";
+import JupiterSection from "../components/JupiterSection";
 
 function LandingPage() {
   return (
@@ -15,6 +16,7 @@ function LandingPage() {
         <VenusSection />
         <EarthSection />
         <MarsSection />
+        <JupiterSection />
       </main>
     </>
   );
