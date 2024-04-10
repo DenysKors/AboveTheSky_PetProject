@@ -14,15 +14,14 @@ function Navigation() {
 
   return (
     <>
-      <nav className="mx-auto w-screen flex items-center justify-between py-4 px-6 lg:px-8">
-        <div className="flex ">
-          <a
-            href="#home"
-            className="font-logo p-1.5 text-lg text-logo md:text-xl lg:text-xxl transition duration-1000 hover:text-yellow-500 focus:text-yellow-500"
-          >
-            AboveTheSky
-          </a>
-        </div>
+      <nav className="w-full flex items-center justify-between py-4 px-6 lg:px-8">
+        <a
+          href="/"
+          className="font-logo p-1.5 text-lg text-logo md:text-xl lg:text-xxl transition duration-1000 hover:text-yellow-500 focus:text-yellow-500"
+        >
+          AboveTheSky
+        </a>
+
         <button
           type="button"
           className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-300 md:hidden"

@@ -11,7 +11,7 @@ import Marsmission_6 from "../assets/images/marsmission_6.png";
 function MarsSection() {
   return (
     <section id="mars">
-      <div className="relative w-full h-[380px] md:h-[620px] lg:h-[840px] flex items-center">
+      <div className="mb-5 relative w-full h-[380px] md:h-[620px] lg:h-[840px] flex items-center">
         <div className="w-[calc(100vw-54%)]">
           <img src={Mars} alt="mars" />
         </div>
@@ -30,7 +30,7 @@ function MarsSection() {
           </p>
         </div>
       </div>
-      <div className="lg:pt-24  text-center ">
+      <div className="text-center ">
         <h3 className="inline-block text-text font-text text-sm md:text-base lg:text-lg select-none tracking-wider uppercase border-b-yellow-500 border-b-2 back">
           Mars robots missions
         </h3>

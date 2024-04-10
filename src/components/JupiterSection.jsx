@@ -4,7 +4,7 @@ import Jupiter from "../assets/images/jupiter.png";
 
 function JupiterSection() {
   return (
-    <section className="md:pt-28 lg:pt-48" id="jupiter">
+    <section className="md:pt-28 lg:pt-36" id="jupiter">
       <div className="relative w-full h-[380px] md:h-[620px] lg:h-[840px] flex items-center justify-end">
         <div className="w-[calc(100vw-50%)] flex justify-end">
           <img src={Jupiter} alt="jupiter" />
