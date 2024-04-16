@@ -1,6 +1,11 @@
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
 
 import Uranus from "../assets/images/uranus.png";
+import Miranda from "../assets/images/miranda.jpg";
+import Ariel from "../assets/images/ariel.webp";
+import Umbriel from "../assets/images/umbriel.webp";
+import Titania from "../assets/images/titania.webp";
+import Oberon from "../assets/images/oberon.webp";
 
 function UranusSection() {
   return (
@@ -19,8 +24,45 @@ function UranusSection() {
           <p className="section-text">
             Uranus is a very cold and windy planet, blue-green in color due to
             large amounts of methane. The lowest temperature recorded here is
-            -224&#8451;. One day on Uranus takes about 17 hours.
+            -224&#8451;. Uranus has 28 known moons.
           </p>
+        </div>
+      </div>
+      <div className="text-center">
+        <h3 className="inline-block text-text font-text text-sm md:text-base lg:text-lg select-none tracking-wider uppercase border-b-yellow-500 border-b-2 back">
+          Five major moons
+        </h3>
+        <div className="pt-2 lg:pt-6 md:pt-4 overflow-x-auto snap-x snap-mandatory flex gap-2 md:gap-6 lg:gap-8">
+          <div className="snap-center shrink-0 rounded-md overflow-hidden lg:rounded-lg max-w-[320px]">
+            <img className="shrink-0 w-[320px]" src={Miranda} alt="miranda" />
+            <p className="text-text font-text md:text-base lg:text-lg select-none">
+              Miranda
+            </p>
+          </div>
+          <div className="shrink-0 snap-center rounded-md overflow-hidden lg:rounded-lg max-w-[320px]">
+            <img className="shrink-0 w-[320px]" src={Ariel} alt="ariel" />
+            <p className="text-text font-text md:text-base lg:text-lg select-none">
+              Ariel
+            </p>
+          </div>
+          <div className="shrink-0 snap-center rounded-md overflow-hidden lg:rounded-lg max-w-[320px]">
+            <img className="shrink-0 w-[320px]" src={Umbriel} alt="umbriel" />
+            <p className="text-text font-text md:text-base lg:text-lg select-none">
+              Umbriel
+            </p>
+          </div>
+          <div className="shrink-0 snap-center rounded-md overflow-hidden lg:rounded-lg max-w-[320px]">
+            <img className="shrink-0 w-[320px]" src={Titania} alt="titania" />
+            <p className="text-text font-text md:text-base lg:text-lg select-none">
+              Titania
+            </p>
+          </div>
+          <div className="shrink-0 snap-center rounded-md overflow-hidden lg:rounded-lg max-w-[320px]">
+            <img className="shrink-0 w-[320px]" src={Oberon} alt="oberon" />
+            <p className="text-text font-text md:text-base lg:text-lg select-none">
+              Oberon
+            </p>
+          </div>
         </div>
       </div>
     </section>
