@@ -9,7 +9,7 @@ import Oberon from "../assets/images/oberon.webp";
 
 function UranusSection() {
   return (
-    <section className="md:pt-28 lg:pt-36" id="uranus">
+    <section className="md:pt-28 lg:pt-36 pb-60" id="uranus">
       <div className="relative w-full h-[380px] md:h-[620px] lg:h-[840px] flex items-center justify-end">
         <div className="w-[calc(100vw-50%)] flex justify-end">
           <img src={Uranus} alt="uranus" />
@@ -30,38 +30,64 @@ function UranusSection() {
       </div>
       <div className="text-center">
         <h3 className="inline-block text-text font-text text-sm md:text-base lg:text-lg select-none tracking-wider uppercase border-b-yellow-500 border-b-2 back">
-          Five major moons
+          Uranus five major moons
         </h3>
-        <div className="pt-2 lg:pt-6 md:pt-4 overflow-x-auto snap-x snap-mandatory flex gap-2 md:gap-6 lg:gap-8">
-          <div className="snap-center shrink-0 rounded-md overflow-hidden lg:rounded-lg max-w-[320px]">
-            <img className="shrink-0 w-[320px]" src={Miranda} alt="miranda" />
-            <p className="text-text font-text md:text-base lg:text-lg select-none">
+        <div className="m-auto py-2 md:py-4 lg:py-6 w-full md:w-[calc(100vw-30%)] overflow-x-auto snap-x snap-mandatory flex gap-2 md:gap-6 lg:gap-8">
+          <div className="shrink-0 snap-always snap-center">
+            <div className="w-[35px] h-[200px] md:w-[100px] md:h-[300px] lg:w-[210px] lg:h-[420px]"></div>
+          </div>
+          <div className="shrink-0 snap-always snap-center rounded-md overflow-hidden lg:rounded-lg bg-black">
+            <img
+              className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
+              src={Miranda}
+              alt="miranda"
+            />
+            <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none ">
               Miranda
             </p>
           </div>
-          <div className="shrink-0 snap-center rounded-md overflow-hidden lg:rounded-lg max-w-[320px]">
-            <img className="shrink-0 w-[320px]" src={Ariel} alt="ariel" />
-            <p className="text-text font-text md:text-base lg:text-lg select-none">
+          <div className="shrink-0 snap-always snap-center rounded-md overflow-hidden lg:rounded-lg bg-black">
+            <img
+              className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
+              src={Ariel}
+              alt="ariel"
+            />
+            <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
               Ariel
             </p>
           </div>
-          <div className="shrink-0 snap-center rounded-md overflow-hidden lg:rounded-lg max-w-[320px]">
-            <img className="shrink-0 w-[320px]" src={Umbriel} alt="umbriel" />
-            <p className="text-text font-text md:text-base lg:text-lg select-none">
+          <div className="shrink-0 snap-always snap-center rounded-md overflow-hidden lg:rounded-lg bg-black">
+            <img
+              className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
+              src={Umbriel}
+              alt="umbriel"
+            />
+            <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
               Umbriel
             </p>
           </div>
-          <div className="shrink-0 snap-center rounded-md overflow-hidden lg:rounded-lg max-w-[320px]">
-            <img className="shrink-0 w-[320px]" src={Titania} alt="titania" />
-            <p className="text-text font-text md:text-base lg:text-lg select-none">
+          <div className="shrink-0 snap-always snap-center rounded-md overflow-hidden lg:rounded-lg bg-black">
+            <img
+              className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
+              src={Titania}
+              alt="titania"
+            />
+            <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
               Titania
             </p>
           </div>
-          <div className="shrink-0 snap-center rounded-md overflow-hidden lg:rounded-lg max-w-[320px]">
-            <img className="shrink-0 w-[320px]" src={Oberon} alt="oberon" />
-            <p className="text-text font-text md:text-base lg:text-lg select-none">
+          <div className="shrink-0 snap-always snap-center rounded-md overflow-hidden lg:rounded-lg bg-black">
+            <img
+              className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
+              src={Oberon}
+              alt="oberon"
+            />
+            <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
               Oberon
             </p>
+          </div>
+          <div className="shrink-0 snap-always snap-center">
+            <div className="w-[35px] h-[200px] md:w-[100px] md:h-[300px] lg:w-[210px] lg:h-[420px]"></div>
           </div>
         </div>
       </div>
