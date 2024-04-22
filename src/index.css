@@ -85,3 +85,12 @@
     opacity: 1;
   }
 } */
+
+/* Customize slick-library dots colors: */
+.slick-dots li button:before {
+  color: rgb(209 213 219);
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgb(234 179 8);
+}

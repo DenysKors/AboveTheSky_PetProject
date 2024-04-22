@@ -1,11 +1,7 @@
 import { ChevronDoubleRightIcon } from "@heroicons/react/24/outline";
 
+import ImageSlider from "../components/Slider";
 import Uranus from "../assets/images/uranus.png";
-import Miranda from "../assets/images/miranda.jpg";
-import Ariel from "../assets/images/ariel.webp";
-import Umbriel from "../assets/images/umbriel.webp";
-import Titania from "../assets/images/titania.webp";
-import Oberon from "../assets/images/oberon.webp";
 
 function UranusSection() {
   return (
@@ -29,10 +25,14 @@ function UranusSection() {
         </div>
       </div>
       <div className="text-center">
-        <h3 className="inline-block text-text font-text text-sm md:text-base lg:text-lg select-none tracking-wider uppercase border-b-yellow-500 border-b-2 back">
+        <h3 className="mb-2 md:mb-4 lg:mb-6 inline-block text-text font-text text-sm md:text-base lg:text-lg select-none tracking-wider uppercase border-b-yellow-500 border-b-2 back">
           Uranus five major moons
         </h3>
-        <div className="m-auto py-2 md:py-4 lg:py-6 w-full md:w-[calc(100vw-30%)] overflow-x-auto snap-x snap-mandatory flex gap-2 md:gap-6 lg:gap-8">
+        {/* Image slider using installed library */}
+        <ImageSlider />
+
+        {/* Scroll box with images using tailwind built-in classes */}
+        {/* <div className="m-auto py-2 md:py-4 lg:py-6 w-full md:w-[calc(100vw-30%)] overflow-x-auto snap-x snap-mandatory flex gap-2 md:gap-6 lg:gap-8">
           <div className="shrink-0 snap-always snap-center">
             <div className="w-[35px] h-[200px] md:w-[100px] md:h-[300px] lg:w-[210px] lg:h-[420px]"></div>
           </div>
@@ -89,7 +89,7 @@ function UranusSection() {
           <div className="shrink-0 snap-always snap-center">
             <div className="w-[35px] h-[200px] md:w-[100px] md:h-[300px] lg:w-[210px] lg:h-[420px]"></div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
