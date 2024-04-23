@@ -14,62 +14,72 @@ function ImageSlider() {
     centerMode: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    variableWidth: true,
     autoplay: true,
     speed: 500,
     autoplaySpeed: 2500,
-    waitForAnimate: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
     cssEase: "linear",
   };
   return (
     <div className="slider-container">
       <Slider {...settings}>
         <div className="bg-black">
-          <img
-            className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
-            src={Miranda}
-            alt="miranda"
-          />
+          <div className="flex justify-center">
+            <img
+              className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain flex justify-center"
+              src={Miranda}
+              alt="miranda"
+            />
+          </div>
           <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
             Miranda
           </p>
         </div>
         <div className="bg-black">
-          <img
-            className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
-            src={Ariel}
-            alt="ariel"
-          />
+          <div className="flex justify-center">
+            <img
+              className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
+              src={Ariel}
+              alt="ariel"
+            />
+          </div>
           <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
             Ariel
           </p>
         </div>
         <div className="bg-black">
-          <img
-            className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
-            src={Umbriel}
-            alt="umbriel"
-          />
+          <div className="flex justify-center">
+            <img
+              className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
+              src={Umbriel}
+              alt="umbriel"
+            />
+          </div>
           <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
             Umbriel
           </p>
         </div>
         <div className="bg-black">
-          <img
-            className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
-            src={Titania}
-            alt="titania"
-          />
+          <div className="flex justify-center">
+            <img
+              className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
+              src={Titania}
+              alt="titania"
+            />
+          </div>
           <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
             Titania
           </p>
         </div>
         <div className="bg-black">
-          <img
-            className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
-            src={Oberon}
-            alt="oberon"
-          />
+          <div className="flex justify-center">
+            <img
+              className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
+              src={Oberon}
+              alt="oberon"
+            />
+          </div>
           <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
             Oberon
           </p>
