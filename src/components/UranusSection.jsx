@@ -5,7 +5,7 @@ import Uranus from "../assets/images/uranus.png";
 
 function UranusSection() {
   return (
-    <section className="md:pt-28 lg:pt-36 pb-60" id="uranus">
+    <section className="md:pt-28 lg:pt-36" id="uranus">
       <div className="relative w-full h-[380px] md:h-[620px] lg:h-[840px] flex items-center justify-end">
         <div className="w-[calc(100vw-50%)] flex justify-end">
           <img src={Uranus} alt="uranus" />
