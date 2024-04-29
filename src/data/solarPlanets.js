@@ -8,4 +8,5 @@ export const solarPlanets = [
   { name: "Saturn", href: "#saturn" },
   { name: "Uranus", href: "#uranus" },
   { name: "Neptune", href: "#neptune" },
+  { name: "Pluto", href: "#pluto" },
 ];

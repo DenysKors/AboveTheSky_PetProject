@@ -9,6 +9,7 @@ import SaturnSection from "../components/SaturnSection";
 import UranusSection from "../components/UranusSection";
 import NeptuneSection from "../components/NeptuneSection";
 import PlutoSection from "../components/PlutoSection";
+import SolarPlanetsSection from "../components/SolarPlanetsSection";
 
 function LandingPage() {
   return (
@@ -25,6 +26,7 @@ function LandingPage() {
         <UranusSection />
         <NeptuneSection />
         <PlutoSection />
+        <SolarPlanetsSection />
       </main>
     </>
   );

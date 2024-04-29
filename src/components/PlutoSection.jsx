@@ -6,7 +6,7 @@ function PlutoSection() {
   return (
     <section className="md:pt-28 lg:pt-36" id="pluto">
       <div className="relative w-full h-[380px] md:h-[620px] lg:h-[840px] flex items-center justify-end">
-        <div className="w-[calc(100vw-50%)] flex justify-end">
+        <div className="w-[calc(100vw-52%)] flex justify-end">
           <img src={Pluto} alt="pluto" />
         </div>
         <div className="absolute z-10 left-0 md:left-[5%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
