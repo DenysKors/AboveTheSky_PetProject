@@ -4,7 +4,7 @@ const options = {
   threshold: 0.75,
 };
 
-const onEntry = (entries, observer) => {
+const onEntry = (entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("text-fadeIn");

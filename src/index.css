@@ -66,6 +66,19 @@
   }
 }
 
+.textColorAdd {
+  animation: colorAdd 1000ms linear forwards;
+}
+
+@keyframes colorAdd {
+  0% {
+    color: white;
+  }
+  100% {
+    color: rgb(234 179 8);
+  }
+}
+
 /* Some of these css propertys is experimental, so I am going to use observer to be 100% sure it works.
 @layer base {
   @media (prefers-reduced-motion: no-preference) {
