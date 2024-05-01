@@ -1,7 +1,7 @@
 import { Letter } from "./Letter";
 
 export const LettersColor = ({ userString }) => {
-  if (typeof userString !== "string") return alert("String require");
+  if (typeof userString !== "string") return alert("String required");
   const stringLength = userString.length;
   const lettersArray = userString.split("");
 
@@ -21,7 +21,7 @@ export const LettersColor = ({ userString }) => {
     } else if (isClass) {
       danceLetterRef.classList.remove("textColorAdd");
     } else return;
-  }, 2000);
+  }, 1500);
 
   return (
     <div className="mb-2 md:mb-4 lg:mb-6">

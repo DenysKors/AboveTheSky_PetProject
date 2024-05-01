@@ -5,7 +5,7 @@ import SolarSystem from "../assets/images/solar_system.jpg";
 function SolarPlanetsSection() {
   return (
     <section className="md:py-28 lg:py-36 text-center">
-      <LettersColor userString="Solar System parade of the planets" />
+      <LettersColor userString="Solar System planets parade" />
       <div>
         <img className="object-fill" src={SolarSystem} alt="solar_system" />
       </div>
