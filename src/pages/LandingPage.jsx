@@ -10,6 +10,7 @@ import UranusSection from "../components/UranusSection";
 import NeptuneSection from "../components/NeptuneSection";
 import PlutoSection from "../components/PlutoSection";
 import SolarPlanetsSection from "../components/SolarPlanetsSection";
+import Footer from "../components/Footer";
 
 function LandingPage() {
   return (
@@ -28,6 +29,7 @@ function LandingPage() {
         <PlutoSection />
         <SolarPlanetsSection />
       </main>
+      <Footer />
     </>
   );
 }

@@ -19,7 +19,7 @@ function PlutoSection() {
           <p className="section-text">
             Dwarf planets like Pluto were defined as objects that orbit the Sun,
             and are nearly round, but have not been able to clear their orbit of
-            debris. It is only about 1,151 km. wide.
+            debris. It is only about 1,151 km wide.
           </p>
         </div>
       </div>

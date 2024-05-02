@@ -74,12 +74,12 @@ function Navigation() {
               </>
             )}
           </Popover>
-          <a href="#" className="btn-nav">
+          <button className="btn-nav" onClick={() => alert("Coming soon")}>
             Get picture
-          </a>
-          <a href="#" className="btn-nav">
+          </button>
+          <button className="btn-nav" onClick={() => alert("Coming soon")}>
             Feedback
-          </a>
+          </button>
         </Popover.Group>
       </nav>
       <Dialog
