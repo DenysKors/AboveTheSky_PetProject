@@ -1,13 +1,14 @@
 function Footer() {
   return (
-    <footer className="relative mt-16 md:mt-28 lg:mt-36 h-[60vh]">
+    <footer className="relative mt-16 md:mt-28 lg:mt-36 h-[60vh] overflow-hidden">
       <div className="w-[75vw] h-full bg-footerMoon bg-no-repeat bg-left-bottom bg-contain"></div>
-      <div className="absolute right-[5%] bottom-[10%] h-[13vh] md:h-[16vh] flex flex-col justify-between">
+      <div className="absolute right-[5%] bottom-[10%] md:bottom-[15%] h-20 md:h-36 flex flex-col justify-between">
         <a
-          className="p-1 bg-gray-300 rounded transition duration-300 hover:shadow-nav"
+          className="social-link bg-gray-300 rounded transition duration-300 hover:shadow-nav"
           href="https://linkedin.com/in/denys-korsukov"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
           <span>
             <svg
@@ -20,10 +21,11 @@ function Footer() {
           </span>
         </a>
         <a
-          className="p-1 bg-gray-300 rounded-full transition duration-300 hover:shadow-nav"
+          className="social-link bg-gray-300 rounded-full transition duration-300 hover:shadow-nav"
           href="https://github.com/DenysKors"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub"
         >
           <span>
             <svg

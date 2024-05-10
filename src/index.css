@@ -79,6 +79,23 @@
   }
 }
 
+.social-link {
+  padding: 0.25rem;
+  position: relative;
+}
+
+.social-link::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 220%;
+  transform: translateX(-50%);
+  z-index: -1;
+  background-color: rgb(209 213 219);
+}
+
 /* Some of these css propertys is experimental, so I am going to use observer to be 100% sure it works.
 @layer base {
   @media (prefers-reduced-motion: no-preference) {
