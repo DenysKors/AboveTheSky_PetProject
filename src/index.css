@@ -79,12 +79,31 @@
   }
 }
 
-.social-link {
-  padding: 0.25rem;
-  position: relative;
+.link-wrapper {
+  position: absolute;
 }
 
-.social-link::after {
+.link-wrapper::after {
+  content: "";
+  height: 2px;
+  width: 50px;
+  position: absolute;
+  left: -40%;
+  top: 50%;
+  transform: rotate(90deg);
+  z-index: -1;
+  background-color: rgb(209 213 219);
+}
+
+@media screen and (min-width: 768px) {
+  .link-wrapper::after {
+    width: 120px;
+    left: -117%;
+    top: 50%;
+  }
+}
+
+/* .social-link::after {
   content: "";
   width: 120px;
   height: 2px;
@@ -94,7 +113,7 @@
   transform: translateX(-50%);
   z-index: -1;
   background-color: rgb(209 213 219);
-}
+} */
 
 /* Some of these css propertys is experimental, so I am going to use observer to be 100% sure it works.
 @layer base {
