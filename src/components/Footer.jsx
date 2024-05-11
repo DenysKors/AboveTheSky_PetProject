@@ -1,7 +1,12 @@
+import Pizza from "../assets/images/pizza_slice.png";
+
 function Footer() {
   return (
-    <footer className="relative mt-16 md:mt-28 lg:mt-36 h-[60vh] overflow-hidden">
+    <footer className="relative mt-16 md:mt-28 lg:mt-36 h-[45vh] md:h-[60vh] overflow-hidden">
       <div className="w-[75vw] h-full bg-footerMoon bg-no-repeat bg-left-bottom bg-contain"></div>
+      <div className="absolute top-[5%] left-[45%] w-[50px] md:top-[10%] md:left-[55%] md:w-[80px] lg:top-[10%] lg:w-[90px]">
+        <img src={Pizza} alt="pizza slice" />
+      </div>
       <div className="link-wrapper right-[5%] bottom-[10%] md:bottom-[15%] h-20 md:h-36 flex flex-col justify-between">
         <a
           className="p-1 bg-gray-300 rounded transition duration-300 hover:shadow-nav"
