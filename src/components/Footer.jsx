@@ -1,11 +1,15 @@
 import Pizza from "../assets/images/pizza_slice.png";
+import Astronaut from "../assets/images/footer_astronaut.png";
 
 function Footer() {
   return (
     <footer className="relative mt-16 md:mt-28 lg:mt-36 h-[45vh] md:h-[60vh] overflow-hidden">
       <div className="w-[75vw] h-full bg-footerMoon bg-no-repeat bg-left-bottom bg-contain"></div>
-      <div className="absolute top-[5%] left-[45%] w-[50px] md:top-[10%] md:left-[55%] md:w-[80px] lg:top-[10%] lg:w-[90px]">
+      <div className="absolute top-[3%] left-[calc(100vw-40%)] w-[50px] md:top-[10%] md:left-[55%] md:w-[80px] lg:top-[10%] lg:left-[45%] lg:w-[90px]">
         <img src={Pizza} alt="pizza slice" />
+      </div>
+      <div className="absolute -rotate-45 top-[20%] right-[5%] w-[150px] md:top-[10%] md:right-[10%] md:w-[220px] lg:top-[10%] lg:right-[calc(100vw-75%)] lg:w-[260px]">
+        <img src={Astronaut} alt="astronaut" />
       </div>
       <div className="link-wrapper right-[5%] bottom-[10%] md:bottom-[15%] h-20 md:h-36 flex flex-col justify-between">
         <a
