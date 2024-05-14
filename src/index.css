@@ -41,6 +41,8 @@
   }
 }
 
+/* Animation */
+
 .text-fadeIn {
   animation: fadeIn 500ms linear forwards;
 }
@@ -78,6 +80,8 @@
     color: rgb(234 179 8);
   }
 }
+
+/*Decorative element*/
 
 .link-wrapper {
   position: absolute;

@@ -54,6 +54,15 @@ export default {
           "0%": { transform: "rotate(0deg)" },
           "100%": { transform: "rotate(360deg)" },
         },
+        wigle: {
+          "0%, 7%": { transform: "rotateZ(0)" },
+          "15%": { transform: "rotateZ(-15deg)" },
+          "20%": { transform: "rotateZ(10deg)" },
+          "25%": { transform: "rotateZ(-10deg)" },
+          "30%": { transform: "rotateZ(6deg)" },
+          "35%": { transform: "rotateZ(-4deg)" },
+          "40%, 100%": { transform: "rotateZ(0)" },
+        },
       },
       animation: {
         pulse: "pulse 2000ms linear infinite",
@@ -62,6 +71,7 @@ export default {
         rotate: "rotate 240s linear infinite",
         flyMobile: "flyMobile 3s ease-in-out 8",
         flyTablet: "flyTablet 3s ease-in-out 8",
+        wigle: "wigle 2s linear infinite",
       },
     },
   },
