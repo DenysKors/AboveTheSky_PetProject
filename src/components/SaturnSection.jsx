@@ -7,7 +7,7 @@ function SaturnSection() {
     <section id="saturn">
       <div className="mb-5 relative w-full h-[380px] md:h-[620px] lg:h-[840px] flex items-center">
         <div className="w-[calc(100vw-35%)]">
-          <img src={Saturn} alt="saturn" />
+          <img src={Saturn} alt="saturn" loading="lazy" />
         </div>
         <div className="absolute z-10 right-0 md:right-[5%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
           <h2 className="section-title">Saturn</h2>

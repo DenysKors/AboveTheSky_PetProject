@@ -10,7 +10,7 @@ function SunSection() {
     >
       <div className="relative h-full max-w-[1280px] bg-[radial-gradient(circle_at_33.5%_50%,rgba(210,37,0,1.0)_0%,rgba(210,37,0,1.0)_30%,rgb(6,6,6)_38%)]">
         <div className="absolute z-0 top-[50%] left-[10%] md:left-[8.5%] lg:left-[6.5%] translate-y-[-50%]  w-[calc(100vw-58%)]">
-          <img src={Sun} alt="sun" />
+          <img src={Sun} alt="sun" loading="lazy" />
         </div>
       </div>
       <div className="absolute z-10 right-0 md:right-[5%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">

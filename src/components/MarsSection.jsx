@@ -13,7 +13,7 @@ function MarsSection() {
     <section id="mars">
       <div className="mb-5 relative w-full h-[380px] md:h-[620px] lg:h-[840px] flex items-center">
         <div className="w-[calc(100vw-54%)]">
-          <img src={Mars} alt="mars" />
+          <img src={Mars} alt="mars" loading="lazy" />
         </div>
         <div className="absolute z-10 right-0 md:right-[5%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
           <h2 className="section-title">Mars</h2>
@@ -40,6 +40,7 @@ function MarsSection() {
               className="w-full h-full"
               src={Marsmission_1}
               alt="marsmission"
+              loading="lazy"
             />
           </li>
           <li className="rounded-md overflow-hidden lg:rounded-lg">
@@ -47,6 +48,7 @@ function MarsSection() {
               className="w-full h-full"
               src={Marsmission_2}
               alt="marsmission"
+              loading="lazy"
             />
           </li>
           <li className="rounded-md overflow-hidden lg:rounded-lg">
@@ -54,6 +56,7 @@ function MarsSection() {
               className="w-full h-full"
               src={Marsmission_3}
               alt="marsmission"
+              loading="lazy"
             />
           </li>
           <li className="rounded-md overflow-hidden lg:rounded-lg">
@@ -61,6 +64,7 @@ function MarsSection() {
               className="w-full h-full"
               src={Marsmission_4}
               alt="marsmission"
+              loading="lazy"
             />
           </li>
           <li className="rounded-md overflow-hidden lg:rounded-lg col-span-2">
@@ -68,6 +72,7 @@ function MarsSection() {
               className="w-full h-full"
               src={Marsmission_5}
               alt="marsmission"
+              loading="lazy"
             />
           </li>
           <li className="rounded-md overflow-hidden lg:rounded-lg col-span-3">
@@ -75,6 +80,7 @@ function MarsSection() {
               className="w-full h-full"
               src={Marsmission_6}
               alt="marsmission"
+              loading="lazy"
             />
           </li>
         </ul>

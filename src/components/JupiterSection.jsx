@@ -7,7 +7,7 @@ function JupiterSection() {
     <section className="md:pt-28 lg:pt-36" id="jupiter">
       <div className="relative w-full h-[380px] md:h-[620px] lg:h-[840px] flex items-center justify-end">
         <div className="w-[calc(100vw-50%)] flex justify-end">
-          <img src={Jupiter} alt="jupiter" />
+          <img src={Jupiter} alt="jupiter" loading="lazy" />
         </div>
         <div className="absolute z-10 left-0 md:left-[5%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
           <h2 className="section-title">Jupiter</h2>

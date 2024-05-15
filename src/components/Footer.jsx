@@ -6,10 +6,10 @@ function Footer() {
     <footer className="relative mt-16 md:mt-28 lg:mt-36 h-[45vh] md:h-[60vh] overflow-hidden">
       <div className="w-[75vw] h-full bg-footerMoon bg-no-repeat bg-left-bottom bg-contain"></div>
       <div className="absolute top-[5%] left-[calc(100vw-40%)] w-[50px] md:top-[10%] md:left-[55%] md:w-[80px] lg:top-[10%] lg:left-[45%] lg:w-[100px] animate-wigle">
-        <img src={Pizza} alt="pizza slice" />
+        <img src={Pizza} alt="pizza slice" loading="lazy" />
       </div>
       <div className="absolute -rotate-45 top-[15%] right-[calc(100vw-85%)] w-[150px] md:top-[10%] md:right-[15%] md:w-[220px] lg:top-[10%] lg:right-[calc(100vw-70%)] lg:w-[260px]">
-        <img src={Astronaut} alt="astronaut" />
+        <img src={Astronaut} alt="astronaut" loading="lazy" />
       </div>
       <div className="link-wrapper right-[5%] bottom-[10%] md:bottom-[15%] h-20 md:h-36 flex flex-col justify-between">
         <a

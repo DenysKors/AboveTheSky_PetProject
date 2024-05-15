@@ -33,7 +33,10 @@ function Navigation() {
           <Popover className="relative">
             {({ open }) => (
               <>
-                <Popover.Button className="btn-nav flex items-center gap-x-1">
+                <Popover.Button
+                  className="btn-nav flex items-center gap-x-1"
+                  type="button"
+                >
                   The Solar system
                   <ChevronDoubleDownIcon
                     className={`${open ? "rotate-180 transition" : ""}
@@ -74,10 +77,18 @@ function Navigation() {
               </>
             )}
           </Popover>
-          <button className="btn-nav" onClick={() => alert("Coming soon")}>
+          <button
+            className="btn-nav"
+            type="button"
+            onClick={() => alert("Coming soon")}
+          >
             Get picture
           </button>
-          <button className="btn-nav" onClick={() => alert("Coming soon")}>
+          <button
+            className="btn-nav"
+            type="button"
+            onClick={() => alert("Coming soon")}
+          >
             Feedback
           </button>
         </Popover.Group>
@@ -105,7 +116,10 @@ function Navigation() {
                 <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-main uppercase leading-7 text-gray-900 hover:bg-gray-200">
+                      <Disclosure.Button
+                        type="button"
+                        className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-main uppercase leading-7 text-gray-900 hover:bg-gray-200"
+                      >
                         The Solar system
                         <ChevronDoubleDownIcon
                           className={`${open ? "rotate-180 transition" : ""}
@@ -129,18 +143,20 @@ function Navigation() {
                     </>
                   )}
                 </Disclosure>
-                <a
-                  href="#"
+                <button
+                  type="button"
                   className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-200"
+                  onClick={() => alert("Coming soon")}
                 >
                   Get picture
-                </a>
-                <a
-                  href="#"
+                </button>
+                <button
+                  type="button"
                   className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-200"
+                  onClick={() => alert("Coming soon")}
                 >
                   Feedback
-                </a>
+                </button>
               </div>
             </div>
           </div>

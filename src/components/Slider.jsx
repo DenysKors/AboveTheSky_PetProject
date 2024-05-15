@@ -30,6 +30,7 @@ function ImageSlider() {
               className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain flex justify-center"
               src={Miranda}
               alt="miranda"
+              loading="lazy"
             />
           </div>
           <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
@@ -42,6 +43,7 @@ function ImageSlider() {
               className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
               src={Ariel}
               alt="ariel"
+              loading="lazy"
             />
           </div>
           <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
@@ -54,6 +56,7 @@ function ImageSlider() {
               className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
               src={Umbriel}
               alt="umbriel"
+              loading="lazy"
             />
           </div>
           <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
@@ -66,6 +69,7 @@ function ImageSlider() {
               className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
               src={Titania}
               alt="titania"
+              loading="lazy"
             />
           </div>
           <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
@@ -78,6 +82,7 @@ function ImageSlider() {
               className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:w-[420px] lg:h-[420px] object-contain"
               src={Oberon}
               alt="oberon"
+              loading="lazy"
             />
           </div>
           <p className="mb-2 md:mb-4 lg:mb-6 text-text font-text md:text-base lg:text-lg select-none">
