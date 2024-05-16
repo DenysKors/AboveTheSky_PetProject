@@ -11,6 +11,7 @@ import NeptuneSection from "../components/NeptuneSection";
 import PlutoSection from "../components/PlutoSection";
 import SolarPlanetsSection from "../components/SolarPlanetsSection";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 function LandingPage() {
   return (
@@ -30,6 +31,7 @@ function LandingPage() {
         <SolarPlanetsSection />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }

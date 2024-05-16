@@ -11,7 +11,7 @@ function Footer() {
       <div className="absolute -rotate-45 top-[15%] right-[calc(100vw-85%)] w-[150px] md:top-[10%] md:right-[15%] md:w-[220px] lg:top-[10%] lg:right-[calc(100vw-70%)] lg:w-[260px]">
         <img src={Astronaut} alt="astronaut" loading="lazy" />
       </div>
-      <div className="link-wrapper right-[5%] bottom-[10%] md:bottom-[15%] h-20 md:h-36 flex flex-col justify-between">
+      <div className="link-wrapper right-[15%] bottom-[10%] md:bottom-[15%] md:right-[10%] h-20 md:h-36 flex flex-col justify-between">
         <a
           className="p-1 bg-gray-300 rounded transition duration-300 hover:shadow-nav"
           href="https://linkedin.com/in/denys-korsukov"

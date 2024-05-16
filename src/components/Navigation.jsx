@@ -24,6 +24,7 @@ function Navigation() {
 
         <button
           type="button"
+          aria-label="Burger menu button"
           className="inline-flex items-center justify-center rounded-md p-2.5 text-gray-300 md:hidden"
           onClick={() => setIsBurgerMenuOpen(true)}
         >

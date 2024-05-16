@@ -29,6 +29,7 @@ export default {
         "radial-gradient":
           "radial-gradient (circle_at_center_left, rgba(162,13,0, 0.5)_0%,rgb(0,0,0)_100%)",
         footerMoon: "url(./assets/images/footer_moon.png)",
+        scrollBtn: "url(./assets/images/rocket.png)",
       },
       boxShadow: {
         nav: "rgba(256, 256, 256, 0.8) 0px -10px 30px 4px;",
