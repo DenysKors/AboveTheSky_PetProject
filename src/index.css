@@ -107,19 +107,37 @@
   }
 }
 
-/* .social-link::after {
-  content: "";
-  width: 120px;
-  height: 2px;
+.scroll-btn {
+  position: fixed;
+}
+
+.scroll-btn::before {
   position: absolute;
-  top: 50%;
-  left: 220%;
+  content: "UP";
+  top: -30%;
+  width: 20px;
+  height: 20px;
+  color: white;
   transform: translateX(-50%);
-  z-index: -1;
-  background-color: rgb(209 213 219);
-} */
+}
+
+.scroll-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 25%;
+  width: 30px;
+  height: 40px;
+}
+
+.scroll-btn:hover::after {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("./assets/images/rocket_fire.png");
+}
 
 /* Some of these css propertys is experimental, so I am going to use observer to be 100% sure it works.
+
 @layer base {
   @media (prefers-reduced-motion: no-preference) {
     .text-fadeIn {
