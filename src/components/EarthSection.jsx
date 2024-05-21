@@ -26,10 +26,10 @@ function EarthSection() {
       </div>
       <div className="text-center">
         <h3 className="inline-block text-text font-text text-sm md:text-base lg:text-lg select-none tracking-wider uppercase border-b-yellow-500 border-b-2 back">
-          Earth views from space
+          Earth views from space (coming soon...)
         </h3>
       </div>
-      <div className="flex flex-col gap-3 md:gap-4 xl:gap-8 md:flex-row justify-center items-center">
+      {/* <div className="flex flex-col gap-3 md:gap-4 xl:gap-8 md:flex-row justify-center items-center">
         <div className="relative pt-[55%] w-[calc(100vw-10%)] md:w-[calc(100vw-54%)] xl:w-[calc(100vw-65%)] md:pt-[35%] xl:pt-[30%]">
           <iframe
             src="https://player.vimeo.com/video/927491728?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -58,7 +58,7 @@ function EarthSection() {
             title="Earth light side"
           ></iframe>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

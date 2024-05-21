@@ -125,15 +125,19 @@
   content: "";
   position: absolute;
   bottom: -50%;
-  left: 25%;
   width: 30px;
   height: 40px;
+  transform: translateX(-40%);
 }
 
 .scroll-btn:hover::after {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("./assets/images/rocket_fire.png");
+}
+
+.scroll-btn-visible {
+  display: inline-block;
 }
 
 /* Some of these css propertys is experimental, so I am going to use observer to be 100% sure it works.
