@@ -124,7 +124,7 @@
 .scroll-btn::after {
   content: "";
   position: absolute;
-  bottom: -50%;
+  bottom: -60%;
   width: 30px;
   height: 40px;
   transform: translateX(-40%);

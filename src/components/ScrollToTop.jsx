@@ -1,26 +1,29 @@
-import { useEffect } from "react";
-// const scrollRef = document.getElementById("earth");
-// const btnRef = document.getElementById("scroll-btn");
-// console.log(scrollRef);
-// const scrollBtn = scrollRef.offsetTop;
+import { useEffect, useRef } from "react";
 
 function ScrollToTop() {
-  // if (window.scrollY >= scrollBtn) {
-  //   btnRef.classList.add("scroll-btn-visible");
-  // } else {
-  //   btnRef.classList.remove("scroll-btn-visible");
-  // }
+  const scrollBtnRef = useRef();
+  const sectionOffsetValue = useRef(0);
+
   useEffect(() => {
-    const scrollRef = document.getElementById("earth");
-    // const btnRef = document.getElementById("scroll-btn");
-    console.log(scrollRef);
-  });
+    const sectionRef = document.getElementById("earth");
+    sectionOffsetValue.current = sectionRef.offsetTop;
+  }, []);
+
+  window.onscroll = () => {
+    if (window.scrollY >= sectionOffsetValue.current) {
+      scrollBtnRef.current.classList.add("scroll-btn-visible");
+    } else {
+      scrollBtnRef.current.classList.remove("scroll-btn-visible");
+    }
+  };
+
   return (
     <button
-      id="scroll-btn"
+      ref={scrollBtnRef}
       type="button"
-      className="scroll-btn bottom-10 right-[2%] w-10 lg:w-12 h-14 lg:h-16 z-20 bg-scrollBtn bg-transparent bg-no-repeat bg-contain bg-center"
+      className="scroll-btn bottom-12 right-[2%] w-10 lg:w-12 h-14 lg:h-16 z-20 bg-scrollBtn bg-transparent bg-no-repeat bg-contain bg-center hidden"
       aria-label="Scroll to top button"
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
     ></button>
   );
 }
