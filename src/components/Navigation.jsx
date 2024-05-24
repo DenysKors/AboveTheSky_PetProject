@@ -1,5 +1,4 @@
 import { Fragment, useState } from "react";
-
 import {
   Bars3Icon,
   ChevronDoubleDownIcon,
@@ -7,10 +6,12 @@ import {
 } from "@heroicons/react/24/outline";
 import { Popover, Transition, Dialog, Disclosure } from "@headlessui/react";
 
+import GetImageModal from "./GetImageModal";
 import { solarPlanets } from "../data/solarPlanets";
 
 function Navigation() {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
+  const [isGetImgModalOpen, setIsImgModalOpen] = useState(false);
 
   return (
     <>
@@ -81,10 +82,14 @@ function Navigation() {
           <button
             className="btn-nav"
             type="button"
-            onClick={() => alert("Coming soon")}
+            onClick={() => setIsImgModalOpen(true)}
           >
-            Get picture
+            Get magic image
           </button>
+          <GetImageModal
+            isOpen={isGetImgModalOpen}
+            setIsOpen={setIsImgModalOpen}
+          />
           <button
             className="btn-nav"
             type="button"
@@ -149,7 +154,7 @@ function Navigation() {
                   className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-200"
                   onClick={() => alert("Coming soon")}
                 >
-                  Get picture
+                  Get magic image
                 </button>
                 <button
                   type="button"
