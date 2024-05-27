@@ -6,12 +6,26 @@ import {
 } from "@heroicons/react/24/outline";
 import { Popover, Transition, Dialog, Disclosure } from "@headlessui/react";
 
-import GetImageModal from "./GetImageModal";
+import ImageModal from "./ImageModal";
+import fetchImageData from "../api/imageApi";
 import { solarPlanets } from "../data/solarPlanets";
 
 function Navigation() {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
   const [isGetImgModalOpen, setIsImgModalOpen] = useState(false);
+  const [imgData, setImgData] = useState(null);
+
+  const handleModalOpen = () => {
+    fetchImageData()
+      .then((data) => {
+        setImgData(data);
+        setIsImgModalOpen(true);
+      })
+      .catch((err) => {
+        console.error(`Fetch prolem ${err.message}`);
+        setIsImgModalOpen(true);
+      });
+  };
 
   return (
     <>
@@ -79,16 +93,13 @@ function Navigation() {
               </>
             )}
           </Popover>
-          <button
-            className="btn-nav"
-            type="button"
-            onClick={() => setIsImgModalOpen(true)}
-          >
+          <button className="btn-nav" type="button" onClick={handleModalOpen}>
             Get magic image
           </button>
-          <GetImageModal
+          <ImageModal
             isOpen={isGetImgModalOpen}
             setIsOpen={setIsImgModalOpen}
+            imgData={imgData}
           />
           <button
             className="btn-nav"
