@@ -13,7 +13,7 @@ function ImageModal({ isOpen, setIsOpen, imgData }) {
       {/* Full-screen container to center the panel */}
       <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
         {/* The actual dialog panel  */}
-        <Dialog.Panel className="p-6 mx-auto max-w-lg rounded bg-white">
+        <Dialog.Panel className="p-6 mx-auto max-w-3xl rounded bg-white">
           {imgData ? (
             <Dialog.Title className="font-main text-base md:text-lg lg:text-xl text-balance">
               {imgData?.title}
@@ -23,16 +23,30 @@ function ImageModal({ isOpen, setIsOpen, imgData }) {
               Oooops
             </h3>
           )}
-          {/* <img src={imgData?.url} alt={imgData.title} /> */}
-          {imgData ? (
-            <p className="mt-2 text-xs font-text md:text-base lg:text-lg indent-2">
-              {imgData?.explanation}
-            </p>
-          ) : (
-            <p className="text-xs font-text md:text-base lg:text-lg">
-              Sorry, but there are no more magic images for today.
-            </p>
-          )}
+          <div className="mt-2 flex justify-center items-center">
+            {imgData?.media_type === "image" && (
+              <img src={imgData?.url} alt={imgData?.title} />
+            )}
+            {imgData?.media_type === "video" && (
+              <iframe
+                src={imgData?.url}
+                allow="gyroscope"
+                allowfullscreen
+              ></iframe>
+            )}
+          </div>
+          <div className="mt-2 max-h-20 lg:max-h-28 overflow-y-auto">
+            {imgData ? (
+              <p className="text-xs font-text md:text-base lg:text-lg indent-2">
+                {imgData?.explanation}
+              </p>
+            ) : (
+              <p className="mt-2 text-xs font-text md:text-base lg:text-lg">
+                Sorry, but there are no more magic images for today. Please try
+                later.
+              </p>
+            )}
+          </div>
           {imgData?.copyright && (
             <p className="mt-4 text-xs font-text md:text-base lg:text-lg">{`Copyright: ${imgData?.copyright}`}</p>
           )}
