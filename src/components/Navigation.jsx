@@ -94,20 +94,21 @@ function Navigation() {
             )}
           </Popover>
           <button className="btn-nav" type="button" onClick={handleModalOpen}>
-            Get magic image
+            Magic universe
           </button>
           <ImageModal
             isOpen={isGetImgModalOpen}
             setIsOpen={setIsImgModalOpen}
             imgData={imgData}
           />
-          <button
+          <a
+            href="https://eyes.nasa.gov/apps/solar-system/#/home"
             className="btn-nav"
-            type="button"
-            onClick={() => alert("Coming soon")}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Feedback
-          </button>
+            NASA EYES
+          </a>
         </Popover.Group>
       </nav>
       <Dialog
@@ -165,15 +166,16 @@ function Navigation() {
                   className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-200"
                   onClick={handleModalOpen}
                 >
-                  Get magic image
+                  Magic universe
                 </button>
-                <button
-                  type="button"
+                <a
+                  href="https://eyes.nasa.gov/apps/solar-system/#/home"
                   className="-mx-3 block rounded-lg px-3 py-2 font-main text-base tracking-wide uppercase  text-gray-900 hover:bg-gray-200"
-                  onClick={() => alert("Coming soon")}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Feedback
-                </button>
+                  NASA EYES
+                </a>
               </div>
             </div>
           </div>
