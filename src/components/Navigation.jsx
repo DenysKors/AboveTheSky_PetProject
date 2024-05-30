@@ -45,7 +45,7 @@ function Navigation() {
         >
           <Bars3Icon className="h-6 w-6 text-logo" />
         </button>
-        <Popover.Group className="hidden md:flex md:gap-x-4 lg:gap-x-12 items-center">
+        <Popover.Group className="hidden md:flex md:gap-4 lg:gap-12 items-center">
           <Popover className="relative">
             {({ open }) => (
               <>

@@ -20,9 +20,9 @@ function ImageModal({ isOpen, setIsOpen, imgData }) {
               {imgData?.title}
             </Dialog.Title>
           ) : (
-            <h3 className="font-main text-base md:text-lg lg:text-xl">
+            <h2 className="font-main text-base md:text-lg lg:text-xl">
               Oooops
-            </h3>
+            </h2>
           )}
           <div className="mt-2 flex justify-center items-center">
             {imgData?.media_type === "image" && (
@@ -71,5 +71,3 @@ function ImageModal({ isOpen, setIsOpen, imgData }) {
   );
 }
 export default ImageModal;
-
-// daily update
