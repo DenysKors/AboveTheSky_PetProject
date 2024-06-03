@@ -12,6 +12,7 @@ import PlutoSection from "../components/PlutoSection";
 import SolarPlanetsSection from "../components/SolarPlanetsSection";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
+import NoteModal from "../components/NoteModal";
 
 function LandingPage() {
   return (
@@ -31,6 +32,7 @@ function LandingPage() {
         <SolarPlanetsSection />
       </main>
       <Footer />
+      <NoteModal />
       <ScrollToTop />
     </>
   );
