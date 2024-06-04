@@ -14,9 +14,11 @@ import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
 import NoteModal from "../components/NoteModal";
 
+import UserProvider from "../components/UserContext";
+
 function LandingPage() {
   return (
-    <>
+    <UserProvider>
       <Wrapper />
       <main className="m-auto px-3 md:px-8 lg:px-16 max-w-[1920px] bg-section">
         <SunSection />
@@ -34,7 +36,7 @@ function LandingPage() {
       <Footer />
       <NoteModal />
       <ScrollToTop />
-    </>
+    </UserProvider>
   );
 }
 

@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect, useRef } from "react";
 import {
   Bars3Icon,
   ChevronDoubleDownIcon,
@@ -9,13 +9,31 @@ import { Popover, Transition, Dialog, Disclosure } from "@headlessui/react";
 import ImageModal from "./ImageModal";
 import fetchImageData from "../api/imageApi";
 import { solarPlanets } from "../data/solarPlanets";
+import { useUser } from "../hooks/useContext";
 
 function Navigation() {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
   const [isGetImgModalOpen, setIsImgModalOpen] = useState(false);
   const [imgData, setImgData] = useState(null);
 
+  let timerIdRef = useRef(null);
+
+  const { visitedValue, userVisited } = useUser();
+
+  useEffect(() => {
+    if (visitedValue === 0) {
+      timerIdRef.current = setTimeout(() => {
+        userVisited(1);
+      }, 5000);
+    }
+  }, [userVisited, visitedValue]);
+
   const handleModalOpen = () => {
+    if (visitedValue === 0) {
+      clearTimeout(timerIdRef.current);
+      userVisited(2);
+    } else userVisited(2);
+
     fetchImageData()
       .then((data) => {
         setImgData(data);
