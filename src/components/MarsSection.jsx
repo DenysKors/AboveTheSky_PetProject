@@ -31,7 +31,7 @@ function MarsSection() {
         </div>
       </div>
       <div className="text-center ">
-        <h3 className="inline-block text-text font-text text-sm md:text-base lg:text-lg select-none tracking-wider uppercase border-b-yellow-500 border-b-2 back">
+        <h3 className="inline-block text-text font-text text-sm md:text-base lg:text-lg select-none tracking-wider uppercase border-b-yellow-500 border-b-2">
           Mars robots missions
         </h3>
         <ul className="m-auto pt-2 lg:pt-6 md:pt-4 max-w-[1440px]  grid grid-cols-3 gap-1 md:gap-2 lg:gap-3">

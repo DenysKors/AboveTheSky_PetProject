@@ -59,7 +59,7 @@ function ImageModal({ isOpen, setIsOpen, imgData }) {
               Close
             </button>
             <div className="inline-flex gap-1 items-end">
-              <span className="text-xs font-text md:text-sm lg:text-base">
+              <span className="text-xs font-text md:text-sm lg:text-base border-b-red-600 border-b-2">
                 daily update
               </span>
               <RocketLaunchIcon className="md:w-5 md:h-5 lg:w-7 lg:h-7 fill-yellow-500 stroke-slate-600" />

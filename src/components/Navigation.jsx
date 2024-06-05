@@ -10,6 +10,7 @@ import ImageModal from "./ImageModal";
 import fetchImageData from "../api/imageApi";
 import { solarPlanets } from "../data/solarPlanets";
 import { useUser } from "../hooks/useContext";
+import { STATUS } from "../constants/statusConstants";
 
 function Navigation() {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
@@ -18,21 +19,21 @@ function Navigation() {
 
   let timerIdRef = useRef(null);
 
-  const { visitedValue, userVisited } = useUser();
+  const { visitStatus, userVisitStatus } = useUser();
 
   useEffect(() => {
-    if (visitedValue === 0) {
+    if (visitStatus === STATUS.standby) {
       timerIdRef.current = setTimeout(() => {
-        userVisited(1);
-      }, 5000);
+        userVisitStatus(STATUS.visible);
+      }, 60000);
     }
-  }, [userVisited, visitedValue]);
+  }, [visitStatus, userVisitStatus]);
 
   const handleModalOpen = () => {
-    if (visitedValue === 0) {
+    if (visitStatus === STATUS.standby) {
       clearTimeout(timerIdRef.current);
-      userVisited(2);
-    } else userVisited(2);
+      userVisitStatus(STATUS.hidden);
+    } else userVisitStatus(STATUS.hidden);
 
     fetchImageData()
       .then((data) => {

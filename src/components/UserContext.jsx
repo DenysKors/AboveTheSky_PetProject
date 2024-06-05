@@ -1,14 +1,15 @@
 import { useState } from "react";
 
 import { UserContext } from "../hooks/useContext";
+import { STATUS } from "../constants/statusConstants";
 
 function UserProvider({ children }) {
-  const [visitedValue, setVisitedValue] = useState(0);
+  const [visitStatus, setVisitStatus] = useState(STATUS.standby);
 
-  const userVisited = (value) => setVisitedValue(visitedValue + value);
+  const userVisitStatus = (status) => setVisitStatus(status);
 
   return (
-    <UserContext.Provider value={{ visitedValue, userVisited }}>
+    <UserContext.Provider value={{ visitStatus, userVisitStatus }}>
       {children}
     </UserContext.Provider>
   );
