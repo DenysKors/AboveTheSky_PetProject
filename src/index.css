@@ -139,6 +139,16 @@
 
 .scroll-btn-visible {
   display: inline-block;
+  animation: slowOn 1500ms linear forwards;
+}
+
+@keyframes slowOn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Some of these css propertys is experimental, so I am going to use observer to be 100% sure it works.
