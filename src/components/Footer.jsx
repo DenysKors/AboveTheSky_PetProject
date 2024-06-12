@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="relative mt-16 md:mt-28 lg:mt-36 h-[45vh] md:h-[60vh] overflow-hidden">
       <div className="w-[75vw] h-full bg-footerMoon bg-no-repeat bg-left-bottom bg-contain"></div>
-      <div className="absolute top-[5%] left-[calc(100vw-40%)] w-[50px] md:top-[10%] md:left-[55%] md:w-[80px] lg:top-[10%] lg:left-[45%] lg:w-[100px] animate-wigle">
+      <div className="absolute top-[10%] right-[calc(100vw-85%)] w-[50px] md:top-[5%] md:right-[15%] md:w-[80px] lg:top-[5%] lg:right-[calc(100vw-70%)] lg:w-[100px] animate-wigle">
         <img src={Pizza} alt="pizza slice" loading="lazy" />
       </div>
       <div className="absolute -rotate-45 top-[15%] right-[calc(100vw-85%)] w-[150px] md:top-[10%] md:right-[15%] md:w-[220px] lg:top-[10%] lg:right-[calc(100vw-70%)] lg:w-[260px]">
@@ -48,7 +48,7 @@ function Footer() {
         </a>
       </div>
       <p className="absolute bottom-0 left-[50%] translate-x-[-50%] mb-2 z-10 text-text font-text text-xs md:text-sm lg:text-base">
-        &copy; 2023 DenKors
+        &copy; 2024 DenKors
         <br /> All Rights Reserved
       </p>
     </footer>
