@@ -1,10 +1,20 @@
+// import { useState } from "react";
+
 import Pizza from "../assets/images/pizza_slice.png";
 import Astronaut from "../assets/images/footer_astronaut.png";
 
 function Footer() {
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
-    <footer className="relative mt-16 md:mt-28 lg:mt-36 h-[45vh] md:h-[60vh] overflow-hidden">
-      <div className="w-[75vw] h-full bg-footerMoon bg-no-repeat bg-left-bottom bg-contain"></div>
+    <footer className="relative mt-14 md:mt-20 lg:mt-36 h-[55vh] md:h-[80vh] overflow-hidden bg-footerMoon bg-no-repeat bg-left-bottom bg-footerSm md:bg-footerMd lg:bg-contain">
+      {/* <button
+        className="btn-nav"
+        type="button"
+        onClick={() => setIsModalOpen(true)}
+      >
+        Magic universe
+      </button> */}
       <div className="absolute top-[10%] right-[calc(100vw-85%)] w-[50px] md:top-[5%] md:right-[15%] md:w-[80px] lg:top-[5%] lg:right-[calc(100vw-70%)] lg:w-[100px] animate-wigle">
         <img src={Pizza} alt="pizza slice" loading="lazy" />
       </div>

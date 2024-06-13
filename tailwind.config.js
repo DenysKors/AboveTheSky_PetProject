@@ -33,6 +33,10 @@ export default {
         footerMoon: "url(./assets/images/footer_moon.png)",
         scrollBtn: "url(./assets/images/rocket.png)",
       },
+      backgroundSize: {
+        footerSm: "52% auto",
+        footerMd: "auto 85%",
+      },
       boxShadow: {
         nav: "rgba(256, 256, 256, 0.8) 0px -10px 30px 4px;",
       },

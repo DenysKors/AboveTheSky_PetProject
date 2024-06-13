@@ -14,7 +14,7 @@ import { STATUS } from "../constants/statusConstants";
 
 function Navigation() {
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
-  const [isGetImgModalOpen, setIsImgModalOpen] = useState(false);
+  const [isImgModalOpen, setIsImgModalOpen] = useState(false);
   const [imgData, setImgData] = useState(null);
 
   let timerIdRef = useRef(null);
@@ -116,7 +116,7 @@ function Navigation() {
             Magic universe
           </button>
           <ImageModal
-            isOpen={isGetImgModalOpen}
+            isOpen={isImgModalOpen}
             setIsOpen={setIsImgModalOpen}
             imgData={imgData}
           />
