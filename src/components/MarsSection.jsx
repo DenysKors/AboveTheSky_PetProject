@@ -17,10 +17,10 @@ function MarsSection() {
         </div>
         <div className="absolute z-10 right-0 md:right-[5%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
           <h2 className="section-title">Mars</h2>
-          <div className="hidden md:flex">
-            <ChevronDoubleLeftIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulseDel7" />
-            <ChevronDoubleLeftIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulseDel4" />
-            <ChevronDoubleLeftIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulse" />
+          <div className="flex">
+            <ChevronDoubleLeftIcon className="text-yellow-500 w-4 h-4 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulseDel7" />
+            <ChevronDoubleLeftIcon className="text-yellow-500 w-4 h-4 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulseDel4" />
+            <ChevronDoubleLeftIcon className="text-yellow-500 w-4 h-4 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulse" />
           </div>
           <p className="section-text">
             The only planet inhabited entirely by robots and home to the highest

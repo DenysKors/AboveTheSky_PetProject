@@ -11,10 +11,10 @@ function EarthSection() {
         </div>
         <div className="absolute z-10 left-0 md:left-[5%] top-[15%] p-1 max-w-[180px] md:max-w-[225px] lg:max-w-[320px] xl:max-w-[380px]">
           <h2 className="section-title">Earth</h2>
-          <div className="hidden md:flex">
-            <ChevronDoubleRightIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulse" />
-            <ChevronDoubleRightIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulseDel4" />
-            <ChevronDoubleRightIcon className="text-yellow-500 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulseDel7" />
+          <div className="flex">
+            <ChevronDoubleRightIcon className="text-yellow-500 w-4 h-4 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulse" />
+            <ChevronDoubleRightIcon className="text-yellow-500 w-4 h-4 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulseDel4" />
+            <ChevronDoubleRightIcon className="text-yellow-500 w-4 h-4 md:w-5 md:h-5 lg:w-7 lg:h-7 animate-pulseDel7" />
           </div>
           <p className="section-text">
             Earth has a moon and an atmosphere that consists of 78% nitrogen,
