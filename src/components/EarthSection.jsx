@@ -18,7 +18,7 @@ function EarthSection() {
           </div>
           <p className="section-text">
             Earth has a moon and an atmosphere that consists of 78% nitrogen,
-            21% oxygen, and 1% other gases. Its the only place we know of
+            21% oxygen and 1% other gases. Its the only place we know of
             inhabited by living things. Beautiful nature and the perfect place
             for life.
           </p>

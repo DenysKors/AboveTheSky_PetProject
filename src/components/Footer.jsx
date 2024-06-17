@@ -1,12 +1,15 @@
 import { useState } from "react";
 import { StarIcon } from "@heroicons/react/24/outline";
 
+import { useUser } from "../hooks/useContext";
 import Pizza from "../assets/images/pizza_slice.png";
 import Astronaut from "../assets/images/footer_astronaut.png";
-import FormModal from "./FormModal";
+import QuizModal from "./QuizModal";
 
 function Footer() {
   const [isFormModalOpen, setIsFormModalOpen] = useState(false);
+
+  const { nickname } = useUser();
 
   return (
     <footer className="relative pt-12 mt-14 md:mt-20 lg:mt-36 h-[55vh] md:h-[80vh] overflow-hidden bg-footerMoon bg-no-repeat bg-left-bottom bg-footerSm md:bg-footerMd lg:bg-contain">
@@ -17,11 +20,11 @@ function Footer() {
           type="button"
           onClick={() => setIsFormModalOpen(true)}
         >
-          Check yourself
+          Check yourself, {nickname ? nickname : "astronaut"}
         </button>
         <StarIcon className="text-yellow-500 w-5 h-5 md:w-7 md:h-7 lg:w-9 lg:h-9 animate-pulseDel7" />
       </div>
-      <FormModal isOpen={isFormModalOpen} setIsOpen={setIsFormModalOpen} />
+      <QuizModal isOpen={isFormModalOpen} setIsOpen={setIsFormModalOpen} />
       <div className="absolute top-[10%] right-[calc(100vw-85%)] w-[50px] md:top-[5%] md:right-[15%] md:w-[80px] lg:top-[5%] lg:right-[calc(100vw-70%)] lg:w-[100px] animate-wigle">
         <img src={Pizza} alt="pizza slice" loading="lazy" />
       </div>
