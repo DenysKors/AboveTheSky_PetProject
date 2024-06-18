@@ -28,7 +28,7 @@ export const questionsData = [
   },
   {
     question:
-      "The atmosphere of this planet consist of 78% nitrogen, 21% oxygen, 1% other gases.",
+      "The atmosphere of this planet consist of 78% nitrogen, 21% oxygen, 1% other gases",
     answerOptions: [
       { answer: "Venus", score: 0 },
       { answer: "Earth", score: 1 },
@@ -46,7 +46,7 @@ export const questionsData = [
     ],
   },
   {
-    question: "A gas giant, the largest in the solar system.",
+    question: "A gas giant, the largest in the solar system",
     answerOptions: [
       { answer: "Jupiter", score: 1 },
       { answer: "Saturn", score: 0 },
@@ -55,7 +55,7 @@ export const questionsData = [
     ],
   },
   {
-    question: "The closest planet to the Sun",
+    question: "The closest planet to the Sun:",
     answerOptions: [
       { answer: "Pluto", score: 0 },
       { answer: "Venus", score: 0 },
@@ -64,7 +64,7 @@ export const questionsData = [
     ],
   },
   {
-    question: "The lowest temperature recorded here is -224&#8451;.",
+    question: "The lowest temperature recorded here is -224°C",
     answerOptions: [
       { answer: "Neptune", score: 0 },
       { answer: "Uranus", score: 1 },

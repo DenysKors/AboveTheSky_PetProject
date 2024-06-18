@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 
 import { useUser } from "../hooks/useContext";
+import { questionsData } from "../data/questions";
 import Quiz from "./Quiz";
 
 function QuizModal({ isOpen, setIsOpen }) {
-  const { userNickname } = useUser();
+  const [showScore, setShowScore] = useState(false);
+
+  const { nickname, addNickname, userScore } = useUser();
 
   const onFormSubmit = (evt) => {
     evt.preventDefault();
@@ -16,7 +20,7 @@ function QuizModal({ isOpen, setIsOpen }) {
       return alert("Nickname must be less than 10 characters");
     }
 
-    userNickname(nicknameValue);
+    addNickname(nicknameValue);
   };
 
   return (
@@ -32,12 +36,13 @@ function QuizModal({ isOpen, setIsOpen }) {
       <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
         {/* The actual dialog panel  */}
         <Dialog.Panel className="p-6 mx-auto max-w-4xl max-h-[95vh] rounded bg-white overflow-y-auto">
-          {userNickname ? (
+          {nickname && !showScore && (
             <div>
               <Dialog.Title className="hidden">Quiz</Dialog.Title>
-              <Quiz />
+              <Quiz setShowScore={setShowScore} />
             </div>
-          ) : (
+          )}
+          {!nickname && !userScore && (
             <>
               <Dialog.Title className="font-main text-base md:text-lg lg:text-xl text-balance">
                 Welcome, explorer of the Universe!
@@ -64,6 +69,23 @@ function QuizModal({ isOpen, setIsOpen }) {
                   </button>
                 </div>
               </form>
+              <button
+                className="inline-flex justify-center rounded-md border border-transparent bg-yellow-100 px-4 py-2 font-main text-xs md:text-sm lg:text-base tracking-wide text-yellow-600 hover:bg-yellow-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-600 focus-visible:ring-offset-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Close
+              </button>
+            </>
+          )}
+          {nickname && showScore && userScore === 0 && (
+            <>
+              <Dialog.Title className="font-main text-base md:text-lg lg:text-xl text-balance">
+                {`Quiz results: ${userScore}/${questionsData.length}`}
+              </Dialog.Title>
+              <p className="my-4 font-text md:text-base lg:text-lg ">
+                Well, you do not have any right answers. Please study the facts
+                again.
+              </p>
               <button
                 className="inline-flex justify-center rounded-md border border-transparent bg-yellow-100 px-4 py-2 font-main text-xs md:text-sm lg:text-base tracking-wide text-yellow-600 hover:bg-yellow-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-600 focus-visible:ring-offset-2"
                 onClick={() => setIsOpen(false)}

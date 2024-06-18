@@ -9,20 +9,27 @@ import QuizModal from "./QuizModal";
 function Footer() {
   const [isFormModalOpen, setIsFormModalOpen] = useState(false);
 
-  const { nickname } = useUser();
+  const { nickname, userScore } = useUser();
 
   return (
     <footer className="relative pt-12 mt-14 md:mt-20 lg:mt-36 px-3 md:px-8 lg:px-16 h-[55vh] md:h-[80vh] overflow-hidden bg-footerMoon bg-no-repeat bg-left-bottom bg-footerSm md:bg-footerMd lg:bg-contain">
       <div className="inline-flex flex-row gap-2 items-end">
-        <button
-          className="font-logo text-sm text-right text-logo md:text-base lg:text-lg transition duration-1000 hover:text-yellow-500 focus:text-yellow-500"
-          type="button"
-          onClick={() => setIsFormModalOpen(true)}
-        >
-          Check yourself here, <br />
-          {nickname ? nickname : "astronaut"}
-        </button>
-        <ArrowUturnRightIcon className="text-yellow-500 w-5 h-5 md:w-7 md:h-7 lg:w-9 lg:h-9 animate-pulseDel7 rotate-180" />
+        {!nickname && (
+          <>
+            <button
+              className="font-logo text-sm text-right text-logo md:text-base lg:text-lg transition duration-1000 hover:text-yellow-500 focus:text-yellow-500"
+              type="button"
+              onClick={() => setIsFormModalOpen(true)}
+            >
+              Check yourself here, <br />
+              astronaut
+            </button>
+            <ArrowUturnRightIcon className="text-yellow-500 w-5 h-5 md:w-7 md:h-7 lg:w-9 lg:h-9 animate-pulseDel7 rotate-180" />
+          </>
+        )}
+        {nickname && userScore && (
+          <span className="font-logo text-sm text-right text-logo md:text-base lg:text-lg">{`Congratulations, ${nickname}. Your score is ${userScore}`}</span>
+        )}
       </div>
       <QuizModal isOpen={isFormModalOpen} setIsOpen={setIsFormModalOpen} />
       <div className="absolute top-[10%] right-[calc(100vw-85%)] w-[50px] md:top-[5%] md:right-[15%] md:w-[80px] lg:top-[5%] lg:right-[calc(100vw-70%)] lg:w-[100px] animate-wigle">
