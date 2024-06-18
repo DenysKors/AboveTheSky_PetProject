@@ -1,4 +1,4 @@
-export const questions = [
+export const questionsData = [
   {
     question: "The highest mountain in the solar system is located on:",
     answerOptions: [
