@@ -20,9 +20,9 @@ export default {
         text: ["Ubuntu", "sans-serif"],
       },
       fontSize: {
-        lg: "1.25rem",
-        xl: "1.5rem",
-        xxl: "2.25rem",
+        lg: ["1.25rem", { lineHeight: "1.75rem" }],
+        xl: ["1.5rem", { lineHeight: "2rem" }],
+        xxl: ["2.25rem", { lineHeight: "2.5rem" }],
       },
       backgroundImage: {
         hero: "url('./assets/images/hero.jpg')",
@@ -36,6 +36,7 @@ export default {
       backgroundSize: {
         footerSm: "52% auto",
         footerMd: "auto 85%",
+        footerLg: "auto 90%",
       },
       boxShadow: {
         nav: "rgba(256, 256, 256, 0.8) 0px -10px 30px 4px;",

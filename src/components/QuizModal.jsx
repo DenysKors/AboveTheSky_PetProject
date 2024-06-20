@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
+import { HandThumbUpIcon, TrophyIcon } from "@heroicons/react/24/outline";
 
 import { useUser } from "../hooks/useContext";
 import { questionsData } from "../data/questions";
@@ -77,15 +78,33 @@ function QuizModal({ isOpen, setIsOpen }) {
               </button>
             </>
           )}
-          {nickname && showScore && userScore === 0 && (
+          {nickname && showScore && (
             <>
               <Dialog.Title className="font-main text-base md:text-lg lg:text-xl text-balance">
                 {`Quiz results: ${userScore}/${questionsData.length}`}
               </Dialog.Title>
-              <p className="my-4 font-text md:text-base lg:text-lg ">
-                Well, you do not have any right answers. Please study the facts
-                again.
-              </p>
+              {userScore === 0 && (
+                <p className="my-4 font-text md:text-base lg:text-lg ">
+                  Well, you do not have any right answers. Please study the
+                  facts again.
+                </p>
+              )}
+              {userScore > 0 && userScore <= 6 && (
+                <>
+                  <p className="my-4 font-text md:text-base lg:text-lg ">
+                    Good results! You know a lot about our solar system.
+                  </p>
+                  <HandThumbUpIcon className="m-auto text-yellow-500 w-9 h-9 md:w-11 md:h-11 lg:w-16 lg:h-16" />
+                </>
+              )}
+              {userScore > 6 && userScore <= 9 && (
+                <>
+                  <p className="my-4 font-text md:text-base lg:text-lg ">
+                    Amazing! Your knowledge will surprise even scientists!
+                  </p>
+                  <TrophyIcon className="m-auto text-yellow-500 w-9 h-9 md:w-11 md:h-11 lg:w-16 lg:h-16" />
+                </>
+              )}
               <button
                 className="inline-flex justify-center rounded-md border border-transparent bg-yellow-100 px-4 py-2 font-main text-xs md:text-sm lg:text-base tracking-wide text-yellow-600 hover:bg-yellow-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-600 focus-visible:ring-offset-2"
                 onClick={() => setIsOpen(false)}
