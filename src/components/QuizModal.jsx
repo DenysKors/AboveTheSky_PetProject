@@ -4,6 +4,7 @@ import { HandThumbUpIcon, TrophyIcon } from "@heroicons/react/24/outline";
 
 import { useUser } from "../hooks/useContext";
 import { questionsData } from "../data/questions";
+import fetchUserData from "../api/userApi";
 import Quiz from "./Quiz";
 
 function QuizModal({ isOpen, setIsOpen }) {
@@ -22,6 +23,17 @@ function QuizModal({ isOpen, setIsOpen }) {
     }
 
     addNickname(nicknameValue);
+  };
+
+  const handleCloseModal = () => {
+    setIsOpen(false);
+
+    const userData = {
+      nickname,
+      userScore,
+    };
+
+    fetchUserData(userData);
   };
 
   return (
@@ -107,7 +119,7 @@ function QuizModal({ isOpen, setIsOpen }) {
               )}
               <button
                 className="inline-flex justify-center rounded-md border border-transparent bg-yellow-100 px-4 py-2 font-main text-xs md:text-sm lg:text-base tracking-wide text-yellow-600 hover:bg-yellow-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-600 focus-visible:ring-offset-2"
-                onClick={() => setIsOpen(false)}
+                onClick={handleCloseModal}
               >
                 Close
               </button>
