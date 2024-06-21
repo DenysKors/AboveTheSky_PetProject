@@ -36,7 +36,7 @@ function QuizModal({ isOpen, setIsOpen }) {
       {/* Full-screen container to center the panel */}
       <div className="fixed inset-0 flex w-screen items-center justify-center p-4">
         {/* The actual dialog panel  */}
-        <Dialog.Panel className="p-6 mx-auto max-w-4xl max-h-[95vh] rounded bg-white overflow-y-auto">
+        <Dialog.Panel className="p-6 mx-auto md:w-[550px] lg:w-[650px] max-h-[95vh] rounded bg-white overflow-y-auto">
           {nickname && !showScore && (
             <div>
               <Dialog.Title className="hidden">Quiz</Dialog.Title>
@@ -60,7 +60,7 @@ function QuizModal({ isOpen, setIsOpen }) {
                     autoFocus
                     maxLength={10}
                     required
-                    className="border-2 border-red-500 p-1"
+                    className="border-2 p-1"
                   />
                   <button
                     type="submit"
@@ -94,7 +94,7 @@ function QuizModal({ isOpen, setIsOpen }) {
                   <p className="my-4 font-text md:text-base lg:text-lg ">
                     Good results! You know a lot about our solar system.
                   </p>
-                  <HandThumbUpIcon className="m-auto text-yellow-500 w-9 h-9 md:w-11 md:h-11 lg:w-16 lg:h-16" />
+                  <HandThumbUpIcon className="m-auto text-green-500 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" />
                 </>
               )}
               {userScore > 6 && userScore <= 9 && (
@@ -102,7 +102,7 @@ function QuizModal({ isOpen, setIsOpen }) {
                   <p className="my-4 font-text md:text-base lg:text-lg ">
                     Amazing! Your knowledge will surprise even scientists!
                   </p>
-                  <TrophyIcon className="m-auto text-yellow-500 w-9 h-9 md:w-11 md:h-11 lg:w-16 lg:h-16" />
+                  <TrophyIcon className="m-auto text-amber-500 w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20" />
                 </>
               )}
               <button
