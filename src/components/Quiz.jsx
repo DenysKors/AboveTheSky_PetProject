@@ -14,7 +14,6 @@ function Quiz({ setShowScore }) {
   const handleBtnClick = (score) => {
     const nextQuestion = currentQuestion + 1;
     scoreSummary = scoreSummary + score;
-    console.log(score);
     if (nextQuestion < questionAmount) {
       setCurrentQuestion(nextQuestion);
     } else {
